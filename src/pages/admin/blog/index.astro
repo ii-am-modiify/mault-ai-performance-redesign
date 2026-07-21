@@ -2,7 +2,21 @@
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 ---
 <SiteLayout title="Blog Studio | Mault Demo" description="Create and manage Mault blog posts." canonical="/admin/blog/">
-  <main class="studio shell" data-blog-studio>
+  <section class="studio-login shell" data-studio-login aria-labelledby="studio-login-title">
+    <div class="studio-login-card">
+      <div><p class="eyebrow">Protected demo workspace</p><h1 id="studio-login-title">Mault Blog Studio</h1><p>This public prototype uses shared demo credentials. It is an interface gate, not production authentication.</p></div>
+      <form data-studio-login-form>
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="username" required value="demo@mault.ai" /></label>
+        <label class="field"><span>Demo passphrase</span><input name="passphrase" type="password" autocomplete="current-password" required /></label>
+        <p class="login-error" data-login-error role="alert" hidden>That demo passphrase does not match.</p>
+        <button class="button" type="submit">Open Blog Studio</button>
+      </form>
+      <div class="demo-credentials"><span>Public demo access</span><code>demo@mault.ai</code><code>govern-the-code</code></div>
+      <div class="future-login" aria-label="Future sign-in options"><button type="button" disabled>Sign in with Google <small>Coming soon</small></button><button type="button" disabled>Sign in with Microsoft 365 <small>Coming soon</small></button></div>
+      <p class="login-note">A production deployment would replace this shared gate with role-based Google Workspace and Microsoft 365 OAuth, server-side sessions, and an authenticated publishing API.</p>
+    </div>
+  </section>
+  <main class="studio shell" data-blog-studio hidden>
     <header class="studio-head"><div><p class="eyebrow">Mault content studio</p><h1>Blog posts</h1><p>Create, preview, and manage posts without touching the site code.</p></div><button class="button" type="button" data-new-post>+ New post</button></header>
     <div class="studio-layout">
       <aside class="post-library" aria-label="Saved posts"><div class="library-head"><strong>Posts</strong><span data-post-count>0 posts</span></div><div class="post-list" data-post-list><p class="empty-state">No posts yet. Create the first one.</p></div></aside>
@@ -28,10 +42,23 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
   <script>
     // @ts-nocheck -- DOM elements are guaranteed by this self-contained page.
     const root = document.querySelector('[data-blog-studio]');
+    const login = document.querySelector('[data-studio-login]');
+    const loginForm = document.querySelector('[data-studio-login-form]');
+    const loginError = document.querySelector('[data-login-error]');
+    const unlockStudio = () => { if (root) root.hidden = false; if (login) login.hidden = true; };
+    if (sessionStorage.getItem('mault-demo-studio-access') === 'granted') unlockStudio();
+    loginForm?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(loginForm);
+      const valid = data.get('email') === 'demo@mault.ai' && data.get('passphrase') === 'govern-the-code';
+      if (!valid) { if (loginError) loginError.hidden = false; return; }
+      sessionStorage.setItem('mault-demo-studio-access', 'granted');
+      unlockStudio();
+    });
     if (root) {
       const key = 'mault-demo-blog-posts-v1'; const form = root.querySelector('[data-post-form]'); const list = root.querySelector('[data-post-list]'); const count = root.querySelector('[data-post-count]'); const saveState = root.querySelector('[data-save-state]'); const deleteButton = root.querySelector('[data-delete]'); const imagePreview = root.querySelector('[data-image-preview]'); const dialog = document.querySelector('[data-preview-dialog]'); let posts = JSON.parse(localStorage.getItem(key) || '[]');
       const escapeHtml = (value = '') => value.replace(/[&<>"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[char])); const slugify = (value = '') => value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); const fields = () => { const data = Object.fromEntries(new FormData(form).entries()); delete data.image; return data; }; const persist = () => localStorage.setItem(key, JSON.stringify(posts));
-      const safeArticleHtml = (html = '') => { const doc = new DOMParser().parseFromString(`<main>${html}</main>`, 'text/html'); doc.querySelectorAll('script,style,iframe,object,embed,form,input,button,link,meta').forEach((node) => node.remove()); doc.querySelectorAll('*').forEach((node) => [...node.attributes].forEach((attribute) => { const name = attribute.name.toLowerCase(); const value = attribute.value.trim().toLowerCase(); if (name.startsWith('on') || name === 'style' || ((name === 'href' || name === 'src') && value.startsWith('javascript:'))) node.removeAttribute(attribute.name); })); return doc.querySelector('main')?.innerHTML || ''; };
+      const safeArticleHtml = (html = '') => { const doc = new DOMParser().parseFromString(`<main>${html}</main>`, 'text/html'); const safeUrl = (value, attribute) => { const url = value.trim(); if (/^(https?:|\/|#)/i.test(url)) return true; if (attribute === 'href' && /^mailto:/i.test(url)) return true; return attribute === 'src' && /^data:image\/(png|jpeg|webp|gif);base64,/i.test(url); }; doc.querySelectorAll('script,style,iframe,object,embed,form,input,button,link,meta').forEach((node) => node.remove()); doc.querySelectorAll('*').forEach((node) => { [...node.attributes].forEach((attribute) => { const name = attribute.name.toLowerCase(); if (name.startsWith('on') || name === 'style' || ((name === 'href' || name === 'src') && !safeUrl(attribute.value, name))) node.removeAttribute(attribute.name); }); if (node.getAttribute('target') === '_blank') node.setAttribute('rel', 'noopener noreferrer'); }); return doc.querySelector('main')?.innerHTML || ''; };
       function renderList() { count.textContent = `${posts.length} post${posts.length === 1 ? '' : 's'}`; if (!posts.length) { list.innerHTML = '<p class="empty-state">No posts yet. Create the first one.</p>'; return; } list.innerHTML = posts.slice().sort((a,b) => b.updated.localeCompare(a.updated)).map((post) => `<button type="button" class="post-row" data-edit-id="${post.id}"><span class="post-status ${post.status}">${post.status}</span><strong>${escapeHtml(post.title || 'Untitled post')}</strong><small>${escapeHtml(post.date || 'No date')}</small></button>`).join(''); }
       function resetForm() { form.reset(); form.elements.id.value = ''; form.elements.author.value = 'Mault Team'; form.elements.date.value = new Date().toISOString().slice(0,10); form.elements.imageData.value = ''; imagePreview.hidden = true; imagePreview.innerHTML = ''; deleteButton.hidden = true; saveState.textContent = 'New draft'; form.elements.title.focus(); }
       function editPost(id) { const post = posts.find((item) => item.id === id); if (!post) return; Object.entries(post).forEach(([name,value]) => { if (form.elements[name] && name !== 'image') form.elements[name].value = value || ''; }); if (post.imageData) { imagePreview.innerHTML = `<img src="${post.imageData}" alt="" />`; imagePreview.hidden = false; } else { imagePreview.hidden = true; imagePreview.innerHTML = ''; } deleteButton.hidden = false; saveState.textContent = `Editing ${post.status}`; window.scrollTo({top:0,behavior:'smooth'}); }

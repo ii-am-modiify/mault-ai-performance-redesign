@@ -8,6 +8,8 @@ services:
     networks:
       - mault-v2
     read_only: true
+    cap_drop:
+      - ALL
     tmpfs:
       - /var/cache/nginx
       - /var/run
