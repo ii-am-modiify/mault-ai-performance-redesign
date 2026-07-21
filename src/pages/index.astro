@@ -1,15 +1,15 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 const agents = [
-  ['VS Code','VS','https://code.visualstudio.com/'],
-  ['Cursor','CU','https://www.cursor.com/'],
-  ['Claude Code','CL','https://www.anthropic.com/claude-code'],
-  ['Codex','CX','https://openai.com/codex/'],
-  ['GitHub Copilot','GH','https://github.com/features/copilot'],
-  ['Gemini Code Assist','GE','https://codeassist.google/'],
-  ['Cline','CI','https://cline.bot/'],
-  ['Windsurf','WI','https://windsurf.com/'],
-  ['Kiro','KI','https://kiro.dev/'],
+  ['VS Code','vscode','https://code.visualstudio.com/'],
+  ['Cursor','cursor','https://www.cursor.com/'],
+  ['Claude Code','claude-code','https://www.anthropic.com/claude-code'],
+  ['Codex','codex','https://openai.com/codex/'],
+  ['GitHub Copilot','copilot','https://github.com/features/copilot'],
+  ['Gemini Code Assist','gemini','https://codeassist.google/'],
+  ['Cline','cline','https://cline.bot/'],
+  ['Windsurf','windsurf','https://windsurf.com/'],
+  ['Kiro','kiro','https://kiro.dev/'],
 ];
 const pillars = [
   ['Enforce','Rules execute before agent actions, not after damage is done.'],
@@ -40,17 +40,19 @@ const faqs = [
       <div class="hero-proof" data-reveal>
         <div class="terminal" aria-label="Example Mault governance output">
           <div class="terminal-bar"><i></i><i></i><i></i></div>
-          <div class="command"><b>mault</b> run --policy production</div>
-          <div class="terminal-line"><span>01</span><span>Identity linked to authenticated developer</span></div>
-          <div class="terminal-line"><span>02</span><span>Agent intent and affected scope captured</span></div>
-          <div class="terminal-line"><span>03</span><span>Protected-path policy evaluated</span></div>
-          <div class="terminal-line"><span>04</span><span style="color:var(--green)">Action permitted · evidence sealed</span></div>
+          <div class="terminal-sequence" data-terminal-sequence>
+            <div class="command"><span class="terminal-prompt" aria-hidden="true">$</span> <span class="terminal-command" data-command="mault run --policy production">mault run --policy production</span><span class="terminal-caret" aria-hidden="true"></span></div>
+            <div class="terminal-line" data-terminal-step><span>01</span><span>Identity linked to authenticated developer</span></div>
+            <div class="terminal-line" data-terminal-step><span>02</span><span>Agent intent and affected scope captured</span></div>
+            <div class="terminal-line" data-terminal-step><span>03</span><span>Protected-path policy evaluated</span></div>
+            <div class="terminal-line" data-terminal-step><span>04</span><span style="color:var(--green)">Action permitted · evidence sealed</span></div>
+          </div>
         </div>
         <div class="proof-side"><span class="status">Governance active</span><div class="metric"><strong data-count="100" data-suffix="%">100%</strong><span>State-changing actions attributed</span></div><div class="metric"><strong data-count="0">0</strong><span>Unreviewed policy bypasses</span></div></div>
       </div>
     </div>
   </section>
-  <section class="agent-strip" aria-labelledby="agent-heading"><div class="shell"><div class="agent-intro"><div><p class="eyebrow">Works with your stack</p><h2 id="agent-heading">One governance layer.<br/>Every coding surface.</h2></div><p>Explore the tools Mault is designed to govern. Each tile opens the official product site.</p></div><div class="agent-list">{agents.map(([name,mark,url])=><a class="agent-tile" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name} official website (opens in a new tab)`}><span class="agent-icon">{mark}</span><strong>{name}</strong><span class="agent-arrow" aria-hidden="true">↗</span></a>)}</div></div></section>
+  <section class="agent-strip" aria-labelledby="agent-heading"><div class="shell"><div class="agent-intro"><div><p class="eyebrow">Works with your stack</p><h2 id="agent-heading">One governance layer.<br/>Every coding surface.</h2></div><p>Explore the tools Mault is designed to govern. Each tile opens the official product site.</p></div><div class="agent-list">{agents.map(([name,slug,url])=><a class="agent-tile" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name} official website (opens in a new tab)`}><span class="agent-icon"><img src={`/assets/agents/${slug}.svg`} alt="" width="32" height="32" loading="lazy" /></span><strong>{name}</strong><span class="agent-arrow" aria-hidden="true">↗</span></a>)}</div></div></section>
   <section class="section" id="problem"><div class="shell">
     <div class="section-head" data-reveal><div><p class="eyebrow">The gap</p><h2>AI writes code.<br/>Mault enforces your rules.</h2></div><p>Prompts and rules files express intent. They do not prove compliance. Mault makes governance deterministic at the moment an agent attempts to change state.</p></div>
     <div class="cards-3">{pillars.map(([title,body],i)=><article class="card" data-reveal><span class="card-index">0{i+1}</span><h3>{title}</h3><p>{body}</p></article>)}</div>

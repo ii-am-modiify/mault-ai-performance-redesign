@@ -123,6 +123,37 @@ const nav = [
         counterObserver.unobserve(element);
       }), { threshold: .65 });
       document.querySelectorAll('[data-count]').forEach((el) => counterObserver.observe(el));
+
+      const terminal = document.querySelector('[data-terminal-sequence]');
+      const playTerminal = () => {
+        if (!(terminal instanceof HTMLElement) || terminal.dataset.played === 'true') return;
+        terminal.dataset.played = 'true';
+        const command = terminal.querySelector('[data-command]');
+        const steps = [...terminal.querySelectorAll('[data-terminal-step]')];
+        if (!(command instanceof HTMLElement) || reducedMotion) {
+          terminal.classList.add('is-complete');
+          return;
+        }
+        const text = command.dataset.command || '';
+        command.textContent = '';
+        terminal.classList.add('is-running');
+        let index = 0;
+        const typeNext = () => {
+          command.textContent = text.slice(0, index += 1);
+          if (index < text.length) window.setTimeout(typeNext, index < 6 ? 75 : 38);
+          else steps.forEach((step, stepIndex) => window.setTimeout(() => {
+            step.classList.add('is-visible');
+            if (stepIndex === steps.length - 1) terminal.classList.add('is-complete');
+          }, 260 + stepIndex * 360));
+        };
+        window.setTimeout(typeNext, 220);
+      };
+      if (terminal) {
+        const terminalObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+          if (entry.isIntersecting) { playTerminal(); terminalObserver.disconnect(); }
+        }), { threshold: .45 });
+        terminalObserver.observe(terminal);
+      }
     </script>
   </body>
 </html>
