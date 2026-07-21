@@ -2,6 +2,8 @@
 import '../styles/global.css';
 import '../styles/pilot.css';
 import '../styles/integrations.css';
+import '../styles/chatbot.css';
+import MaultBot from '../components/MaultBot.astro';
 interface Props { title: string; description: string; canonical?: string; }
 const { title, description, canonical = Astro.url.pathname } = Astro.props;
 const canonicalUrl = new URL(canonical, Astro.site);
@@ -67,6 +69,7 @@ const nav = [
       </div>
       <div class="shell footer-bottom"><span>© {new Date().getFullYear()} Mault</span><span>Govern code. Prove control.</span></div>
     </footer>
+    <MaultBot />
     <script>
       const button = document.querySelector('.menu-button');
       const menu = document.querySelector('#mobile-menu');

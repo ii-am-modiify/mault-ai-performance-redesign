@@ -1,0 +1,63 @@
+<aside class="mault-bot" data-mault-bot>
+  <button class="mault-bot-launch" type="button" aria-expanded="false" aria-controls="mault-bot-panel"><span class="mault-bot-orb">M</span><span><strong>Ask Mault</strong><small>Product + policy assistant</small></span></button>
+  <section class="mault-bot-panel" id="mault-bot-panel" aria-label="Mault demo assistant" hidden>
+    <header><span class="mault-bot-orb">M</span><div><strong>Mault Bot</strong><small><i></i> grounded demo assistant</small></div><button type="button" data-bot-close aria-label="Close Mault Bot">×</button></header>
+    <div class="mault-bot-log" data-bot-log role="log" aria-live="polite">
+      <article class="bot-message bot-message-assistant"><span>MAULT / ONLINE</span><p>I can explain the platform, map Mault to your coding stack, or simulate a governance decision.</p></article>
+      <div class="mault-bot-prompts">
+        <button type="button" data-bot-prompt="How would Mault govern Cursor?">Govern Cursor</button>
+        <button type="button" data-bot-prompt="Show me a blocked agent action">Simulate a block</button>
+        <button type="button" data-bot-prompt="What evidence does Mault capture?">Evidence captured</button>
+        <button type="button" data-bot-prompt="Explain the 45-day pilot">45-day pilot</button>
+      </div>
+    </div>
+    <form class="mault-bot-form" data-bot-form><label class="sr-only" for="mault-bot-input">Ask Mault Bot</label><input id="mault-bot-input" data-bot-input maxlength="240" autocomplete="off" placeholder="Ask about Mault, policies, or integrations…" /><button type="submit" aria-label="Send message">↗</button></form>
+    <footer>Independent demo · Answers use this site’s content only</footer>
+  </section>
+</aside>
+<script>
+  const root = document.querySelector('[data-mault-bot]');
+  if (root instanceof HTMLElement) {
+    const launch = root.querySelector('.mault-bot-launch'), panel = root.querySelector('.mault-bot-panel'), close = root.querySelector('[data-bot-close]');
+    const form = root.querySelector('[data-bot-form]'), input = root.querySelector('[data-bot-input]'), log = root.querySelector('[data-bot-log]');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const setOpen = (open: boolean) => {
+      if (!(panel instanceof HTMLElement) || !(launch instanceof HTMLElement)) return;
+      panel.hidden = !open; launch.setAttribute('aria-expanded', String(open)); root.classList.toggle('is-open', open);
+      if (open && input instanceof HTMLInputElement) window.setTimeout(() => input.focus(), 60);
+    };
+    const escapeHtml = (value: string) => value.replace(/[&<>"']/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char] || char));
+    const addMessage = (role: string, html: string) => {
+      if (!(log instanceof HTMLElement)) return;
+      const article = document.createElement('article'); article.className = 'bot-message bot-message-' + role;
+      article.innerHTML = role === 'assistant' ? html : '<p>' + escapeHtml(html) + '</p>'; log.append(article);
+      log.scrollTo({ top: log.scrollHeight, behavior: reduced ? 'auto' : 'smooth' });
+    };
+    const answer = (question: string) => {
+      const q = question.toLowerCase();
+      if (/cursor/.test(q)) return '<span>INTEGRATION / CURSOR</span><p>Mault binds developer identity to Cursor-driven changes, captures agent intent and scope, evaluates protected-path policy, then seals the decision and evidence.</p><a href="/docs/integrations/cursor/">Open Cursor integration guide →</a>';
+      if (/claude/.test(q)) return '<span>INTEGRATION / CLAUDE CODE</span><p>Mault evaluates Claude Code actions at the control boundary so identity, intent, policy outcome, and evidence remain attributable.</p><a href="/docs/integrations/claude-code/">Open Claude Code guide →</a>';
+      if (/codex|openai/.test(q)) return '<span>INTEGRATION / CODEX</span><p>Mault governs Codex workflows without replacing the coding runtime. Policies determine what the agent may change and preserve verifiable evidence.</p><a href="/docs/integrations/openai-codex/">Open Codex guide →</a>';
+      if (/copilot/.test(q)) return '<span>INTEGRATION / COPILOT</span><p>GitHub Copilot activity can be evaluated against repository and protected-path policies while preserving developer attribution.</p><a href="/docs/integrations/github-copilot/">Open Copilot guide →</a>';
+      if (/block|unsafe|simulate|secret/.test(q)) return '<span class="bot-decision bot-block">DECISION / BLOCKED</span><pre><code>$ agent write .env.production\\npolicy: protected_secrets\\nreason: credential material cannot be modified\\nidentity: developer@company\\nresult: denied · evidence sealed</code></pre><p>The action never reaches the protected target. The decision remains attributable and reviewable.</p><a href="/how-it-works/">See how enforcement works →</a>';
+      if (/permit|allow|valid/.test(q)) return '<span class="bot-decision bot-permit">DECISION / PERMITTED</span><pre><code>$ agent update src/components/Nav.tsx\\npolicy: production\\nscope: approved source path\\nresult: permitted · evidence sealed</code></pre><p>Identity, intent, scope, policy result, and evidence are bound into one decision record.</p><a href="/platform/">Explore the platform →</a>';
+      if (/evidence|audit|capture|proof/.test(q)) return '<span>EVIDENCE / SEALED</span><p>Mault records authenticated identity, agent intent, affected scope, evaluated policy, decision outcome, and tamper-evident execution evidence.</p><a href="/how-it-works/">Follow the evidence chain →</a>';
+      if (/pilot|45|price|cost/.test(q)) return '<span>PILOT / 45 DAYS</span><p>The pilot scopes one high-value agent workflow, deploys governance in the existing stack, measures decisions, and delivers a governance baseline plus evidence pack.</p><a href="/pilot/">View the pilot →</a>';
+      if (/integration|tools|stack|windsurf|cline|kiro|gemini|augment/.test(q)) return '<span>SUPPORTED SURFACES</span><p>Mault is demonstrated with Claude Code, Cursor, GitHub Copilot, Windsurf, OpenAI Codex, Augment, Cline, Kiro, and Gemini.</p><a href="/docs/integrations/">Browse integration guides →</a>';
+      if (/what is mault|platform|govern|hello|hi\b/.test(q)) return '<span>MAULT / GOVERNANCE</span><p>Mault provides deterministic governance for AI-written code: bind identity, capture intent, evaluate policy before action, and produce evidence that proves control.</p><a href="/platform/">Explore the platform →</a>';
+      return '<span>SOURCE BOUNDARY</span><p>I couldn’t ground that answer in this demo’s published content. Ask about the platform, coding tools, policy decisions, evidence, pricing, or pilot.</p><a href="/docs/">Browse documentation →</a>';
+    };
+    const submitQuestion = (question: string) => {
+      const clean = question.trim().slice(0, 240); if (!clean) return; addMessage('user', clean);
+      if (input instanceof HTMLInputElement) input.value = '';
+      const thinking = document.createElement('article'); thinking.className = 'bot-message bot-message-assistant bot-thinking'; thinking.innerHTML = '<span>POLICY / EVALUATING</span><b><i></i><i></i><i></i></b>'; log?.append(thinking);
+      if (log instanceof HTMLElement) log.scrollTop = log.scrollHeight;
+      window.setTimeout(() => { thinking.remove(); addMessage('assistant', answer(clean)); }, reduced ? 0 : 420);
+    };
+    launch?.addEventListener('click', () => setOpen(launch.getAttribute('aria-expanded') !== 'true'));
+    close?.addEventListener('click', () => setOpen(false));
+    form?.addEventListener('submit', (event) => { event.preventDefault(); if (input instanceof HTMLInputElement) submitQuestion(input.value); });
+    root.querySelectorAll('[data-bot-prompt]').forEach((button) => button.addEventListener('click', () => submitQuestion(button.getAttribute('data-bot-prompt') || '')));
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && root.classList.contains('is-open')) setOpen(false); });
+  }
+</script>
