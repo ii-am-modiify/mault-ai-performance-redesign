@@ -6,13 +6,29 @@ const origin = 'https://mault.ai';
 const stamp = new Date().toISOString().replace(/[:.]/g, '-');
 const root = path.resolve('reference/source', stamp);
 
-const decode = (value = '') => value
-  .replaceAll('&amp;', '&').replaceAll('&#038;', '&')
-  .replaceAll('&#8217;', "'").replaceAll('&quot;', '"')
-  .replaceAll('&lt;', '<').replaceAll('&gt;', '>');
-const strip = (value = '') => decode(value.replace(/<script[\s\S]*?<\/script>/gi, ' ')
-  .replace(/<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ')
-  .replace(/\s+/g, ' ').trim());
+const entities = { amp: '&', '#038': '&', '#8217': "'", quot: '"', lt: '<', gt: '>' };
+const decode = (value = '') => value.replace(/&(amp|#038|#8217|quot|lt|gt);/g, (match, key) => entities[key] || match);
+const withoutBlock = (value, tag) => {
+  let output = ''; let cursor = 0; const lower = value.toLowerCase(); const opener = `<${tag}`; const closer = `</${tag}>`;
+  while (cursor < value.length) {
+    const start = lower.indexOf(opener, cursor);
+    if (start < 0) { output += value.slice(cursor); break; }
+    output += value.slice(cursor, start);
+    const end = lower.indexOf(closer, start + opener.length);
+    cursor = end < 0 ? value.length : end + closer.length;
+  }
+  return output;
+};
+const withoutTags = (value) => {
+  let output = ''; let insideTag = false;
+  for (const character of value) {
+    if (character === '<') insideTag = true;
+    else if (character === '>') { insideTag = false; output += ' '; }
+    else if (!insideTag) output += character;
+  }
+  return output;
+};
+const strip = (value = '') => decode(withoutTags(withoutBlock(withoutBlock(value, 'script'), 'style')).replace(/\s+/g, ' ').trim());
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
 const slugFor = (url) => {
   const parsed = new URL(url);

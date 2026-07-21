@@ -2,7 +2,21 @@
 import SiteLayout from '../../../layouts/SiteLayout.astro';
 ---
 <SiteLayout title="Blog Studio | Mault Demo" description="Create and manage Mault blog posts." canonical="/admin/blog/">
-  <main class="studio shell" data-blog-studio>
+  <section class="studio-login shell" data-studio-login aria-labelledby="studio-login-title">
+    <div class="studio-login-card">
+      <div><p class="eyebrow">Protected demo workspace</p><h1 id="studio-login-title">Mault Blog Studio</h1><p>This public prototype uses shared demo credentials. It is an interface gate, not production authentication.</p></div>
+      <form data-studio-login-form>
+        <label class="field"><span>Email</span><input name="email" type="email" autocomplete="username" required value="demo@mault.ai" /></label>
+        <label class="field"><span>Demo passphrase</span><input name="passphrase" type="password" autocomplete="current-password" required /></label>
+        <p class="login-error" data-login-error role="alert" hidden>That demo passphrase does not match.</p>
+        <button class="button" type="submit">Open Blog Studio</button>
+      </form>
+      <div class="demo-credentials"><span>Public demo access</span><code>demo@mault.ai</code><code>govern-the-code</code></div>
+      <div class="future-login" aria-label="Future sign-in options"><button type="button" disabled>Sign in with Google <small>Coming soon</small></button><button type="button" disabled>Sign in with Microsoft 365 <small>Coming soon</small></button></div>
+      <p class="login-note">A production deployment would replace this shared gate with role-based Google Workspace and Microsoft 365 OAuth, server-side sessions, and an authenticated publishing API.</p>
+    </div>
+  </section>
+  <main class="studio shell" data-blog-studio hidden>
     <header class="studio-head"><div><p class="eyebrow">Mault content studio</p><h1>Blog posts</h1><p>Create, preview, and manage posts without touching the site code.</p></div><button class="button" type="button" data-new-post>+ New post</button></header>
     <div class="studio-layout">
       <aside class="post-library" aria-label="Saved posts"><div class="library-head"><strong>Posts</strong><span data-post-count>0 posts</span></div><div class="post-list" data-post-list><p class="empty-state">No posts yet. Create the first one.</p></div></aside>
@@ -28,6 +42,19 @@ import SiteLayout from '../../../layouts/SiteLayout.astro';
   <script>
     // @ts-nocheck -- DOM elements are guaranteed by this self-contained page.
     const root = document.querySelector('[data-blog-studio]');
+    const login = document.querySelector('[data-studio-login]');
+    const loginForm = document.querySelector('[data-studio-login-form]');
+    const loginError = document.querySelector('[data-login-error]');
+    const unlockStudio = () => { if (root) root.hidden = false; if (login) login.hidden = true; };
+    if (sessionStorage.getItem('mault-demo-studio-access') === 'granted') unlockStudio();
+    loginForm?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(loginForm);
+      const valid = data.get('email') === 'demo@mault.ai' && data.get('passphrase') === 'govern-the-code';
+      if (!valid) { if (loginError) loginError.hidden = false; return; }
+      sessionStorage.setItem('mault-demo-studio-access', 'granted');
+      unlockStudio();
+    });
     if (root) {
       const key = 'mault-demo-blog-posts-v1'; const form = root.querySelector('[data-post-form]'); const list = root.querySelector('[data-post-list]'); const count = root.querySelector('[data-post-count]'); const saveState = root.querySelector('[data-save-state]'); const deleteButton = root.querySelector('[data-delete]'); const imagePreview = root.querySelector('[data-image-preview]'); const dialog = document.querySelector('[data-preview-dialog]'); let posts = JSON.parse(localStorage.getItem(key) || '[]');
       const escapeHtml = (value = '') => value.replace(/[&<>"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[char])); const slugify = (value = '') => value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); const fields = () => { const data = Object.fromEntries(new FormData(form).entries()); delete data.image; return data; }; const persist = () => localStorage.setItem(key, JSON.stringify(posts));

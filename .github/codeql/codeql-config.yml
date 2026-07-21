@@ -1,0 +1,5 @@
+name: Mault demo CodeQL configuration
+
+paths-ignore:
+  # Immutable third-party WordPress captures are audit evidence, not executable project code.
+  - reference/source/**
