@@ -1,6 +1,16 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
-const agents = ['Claude Code','Cursor','Codex','Copilot','Gemini','Cline','Windsurf','Kiro'];
+const agents = [
+  ['VS Code','VS','https://code.visualstudio.com/'],
+  ['Cursor','CU','https://www.cursor.com/'],
+  ['Claude Code','CL','https://www.anthropic.com/claude-code'],
+  ['Codex','CX','https://openai.com/codex/'],
+  ['GitHub Copilot','GH','https://github.com/features/copilot'],
+  ['Gemini Code Assist','GE','https://codeassist.google/'],
+  ['Cline','CI','https://cline.bot/'],
+  ['Windsurf','WI','https://windsurf.com/'],
+  ['Kiro','KI','https://kiro.dev/'],
+];
 const pillars = [
   ['Enforce','Rules execute before agent actions, not after damage is done.'],
   ['See','Every state-changing action becomes observable across your team.'],
@@ -36,11 +46,11 @@ const faqs = [
           <div class="terminal-line"><span>03</span><span>Protected-path policy evaluated</span></div>
           <div class="terminal-line"><span>04</span><span style="color:var(--green)">Action permitted · evidence sealed</span></div>
         </div>
-        <div class="proof-side"><span class="status">Governance active</span><div class="metric"><strong>100%</strong><span>State-changing actions attributed</span></div><div class="metric"><strong>0</strong><span>Unreviewed policy bypasses</span></div></div>
+        <div class="proof-side"><span class="status">Governance active</span><div class="metric"><strong data-count="100" data-suffix="%">100%</strong><span>State-changing actions attributed</span></div><div class="metric"><strong data-count="0">0</strong><span>Unreviewed policy bypasses</span></div></div>
       </div>
     </div>
   </section>
-  <div class="agent-strip"><div class="shell"><div class="agent-list">{agents.map((agent)=><span>{agent}</span>)}</div></div></div>
+  <section class="agent-strip" aria-labelledby="agent-heading"><div class="shell"><div class="agent-intro"><div><p class="eyebrow">Works with your stack</p><h2 id="agent-heading">One governance layer.<br/>Every coding surface.</h2></div><p>Explore the tools Mault is designed to govern. Each tile opens the official product site.</p></div><div class="agent-list">{agents.map(([name,mark,url])=><a class="agent-tile" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name} official website (opens in a new tab)`}><span class="agent-icon">{mark}</span><strong>{name}</strong><span class="agent-arrow" aria-hidden="true">↗</span></a>)}</div></div></section>
   <section class="section" id="problem"><div class="shell">
     <div class="section-head" data-reveal><div><p class="eyebrow">The gap</p><h2>AI writes code.<br/>Mault enforces your rules.</h2></div><p>Prompts and rules files express intent. They do not prove compliance. Mault makes governance deterministic at the moment an agent attempts to change state.</p></div>
     <div class="cards-3">{pillars.map(([title,body],i)=><article class="card" data-reveal><span class="card-index">0{i+1}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
