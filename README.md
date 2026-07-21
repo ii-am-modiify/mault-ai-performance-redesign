@@ -4,6 +4,8 @@ An independent, unsolicited redesign prototype created by [Tech Adventures](http
 
 > This is not an official Mault repository, is not affiliated with Mault, and is not deployed to `mault.ai`. Mault product names, copy, and first-party assets remain the property of Mault and are used only to demonstrate the redesign. The public preview is intentionally `noindex`.
 
+**Live protected demo:** [mault.fltechadventures.com](https://mault.fltechadventures.com)
+
 ## The measured problem
 
 The July 21, 2026 production benchmark found:

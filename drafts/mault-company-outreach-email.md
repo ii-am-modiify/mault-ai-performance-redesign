@@ -2,7 +2,7 @@
 
 **Subject:** I rebuilt Mault.ai and documented the full audit trail
 
-Hi [Name],
+Hi Kim,
 
 I recently interviewed with Mault, and while learning more about the product I spent time auditing the public website. I liked the visual direction and the problem Mault is solving, but the WordPress/Elementor implementation was making the site slower, harder to maintain, and less ready for modern search and AI discovery than the product deserved.
 
@@ -10,7 +10,7 @@ Instead of sending a list of suggestions, I rebuilt it as an independent demo.
 
 Live preview:
 
-https://mault-v2.fltechadventures.com
+https://mault.fltechadventures.com
 
 Public repository and full audit trail:
 
