@@ -33,7 +33,7 @@ const nav = [
   <body>
     <div class="splash" data-splash aria-hidden="true">
       <div class="splash-inner">
-        <div class="splash-brand"><span class="brand-mark">M</span><span>mault</span></div>
+        <div class="splash-brand"><img class="brand-logo brand-logo-splash" src="/assets/mault-logo.png" alt="Mault" width="903" height="313" /></div>
         <div class="splash-readout"><span>Initializing governance</span><strong data-splash-count>0%</strong></div>
         <div class="splash-track"><i data-splash-bar></i></div>
       </div>
@@ -41,7 +41,7 @@ const nav = [
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header" data-header>
       <div class="shell nav-wrap">
-        <a class="brand" href="/"><span class="brand-mark">M</span><span>mault</span></a>
+        <a class="brand" href="/" aria-label="Mault home"><img class="brand-logo" src="/assets/mault-logo.png" alt="Mault" width="903" height="313" /></a>
         <nav class="desktop-nav" aria-label="Primary">
           {nav.map(([href, label]) => <a href={href}>{label}</a>)}
         </nav>
@@ -56,7 +56,7 @@ const nav = [
     <main id="main"><slot /></main>
     <footer class="site-footer">
       <div class="shell footer-grid">
-        <div><a class="brand" href="/"><span class="brand-mark">M</span><span>mault</span></a><p>Deterministic governance for AI-written code.</p></div>
+        <div><a class="brand" href="/" aria-label="Mault home"><img class="brand-logo" src="/assets/mault-logo.png" alt="Mault" width="903" height="313" /></a><p>Deterministic governance for AI-written code.</p></div>
         <div><h2>Explore</h2><a href="/platform/">Platform</a><a href="/how-it-works/">How it works</a><a href="/pricing/">Pricing</a><a href="/docs/">Docs</a></div>
         <div><h2>Company</h2><a href="/blog/">Blog</a><a href="/contact/">Contact</a><a href="/pilot/">Pilot</a><a href="mailto:contact@mault.ai">contact@mault.ai</a></div>
         <div><h2>Legal</h2><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/billing/">Billing</a><a href="/cookie-policy/">Cookies</a></div>
