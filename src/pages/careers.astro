@@ -1,0 +1,19 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import '../styles/marketing-pages.css';
+const tests = [
+  ['The Cold Start','Use AI as your partner to create a working project locally. Show how you prompt, test, and recover when something fails.'],
+  ['Source Control Setup','Create a public GitHub repository, commit the project, and demonstrate local work connecting to remote artifacts.'],
+  ['Feature Planning','Use AI and the GitHub CLI to create three to five useful issues that describe the next work clearly.'],
+];
+---
+<SiteLayout title="Careers at Mault | Prove You Can Learn" description="Mault’s capability-first hiring exercise: demonstrate how quickly you can learn and build with AI as your partner." canonical="/careers/">
+  <header class="mp-hero"><div class="shell"><p class="eyebrow">Mault / Now hiring</p><h1 class="display">Prove you can <span class="gradient-text">learn.</span></h1><p class="lede">That is the whole interview. No degree filter, title filter, or whiteboard theater. Show how you get from zero to something working with AI as your partner.</p></div></header>
+  <section class="section mp-band"><div class="shell mp-grid-2">
+    <article class="mp-card"><span>What does not matter</span><h2>Credentials are not capability.</h2><p>Your degree, previous title, years of experience, school, or ability to memorize a whiteboard solution.</p></article>
+    <article class="mp-card"><span>What matters</span><h2>Show how you learn.</h2><p>Learn new systems quickly, use AI thoughtfully, communicate clearly, and get something working without step-by-step supervision.</p></article>
+  </div></section>
+  <section class="section"><div class="shell"><p class="eyebrow">Three tests / about one hour</p><h2 class="mp-section-title">Your work is the interview.</h2><div class="mp-grid-3">{tests.map(([title,copy],i)=><article class="mp-card"><span>Test {i+1} of 3</span><h3>{title}</h3><p>{copy}</p></article>)}</div></div></section>
+  <section class="section mp-band"><div class="shell mp-hero-grid"><div><p class="eyebrow">Screencast format</p><h2 class="mp-section-title">VS Code and GitHub. Side by side.</h2><p class="lede">Show AI scaffolding, terminal commands, prompts, iteration, commits, and issues appearing in the remote repository.</p></div><aside class="mp-panel"><h2>What to send</h2><ul class="mp-list"><li>Shareable Google Drive folder</li><li>Technical screencast covering Tests 1–3</li><li>Public GitHub repository</li><li>Three to five real GitHub issues</li><li>Full name, location, and contact details</li></ul><p><a href="mailto:hiring@mault.ai" style="color:var(--green)">hiring@mault.ai</a></p></aside></div></section>
+  <section class="cta"><div class="shell cta-box"><p class="eyebrow">Ready?</p><h2>Two links. One email.</h2><p>Google Drive folder plus public GitHub repository. Keep the submission focused on proof.</p><a class="button" href="mailto:hiring@mault.ai">Prepare your submission</a></div></section>
+</SiteLayout>
