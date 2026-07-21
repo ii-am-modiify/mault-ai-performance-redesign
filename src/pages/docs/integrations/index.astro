@@ -1,0 +1,8 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import integrations from '../../../data/integrations.json';
+---
+<SiteLayout title="Mault integrations" description="Explore how Mault governs AI coding tools with deterministic policy, developer attribution, and audit-ready evidence." canonical="/docs/integrations/">
+  <header class="page-hero"><div class="shell"><p class="eyebrow">Mault integrations</p><h1>Govern the tools your team already uses.</h1><p class="lede">Agent-specific guides for adding deterministic control, attribution, and evidence without replacing your coding workflow.</p></div></header>
+  <section class="shell integration-directory">{integrations.map((item)=><a href={`/docs/integrations/${item.slug}/`}><img src={`/assets/agents/${item.icon}`} alt="" width="42" height="42"/><div><h2>{item.name}</h2><p>{item.dek}</p></div><span>Read guide →</span></a>)}</section>
+</SiteLayout>

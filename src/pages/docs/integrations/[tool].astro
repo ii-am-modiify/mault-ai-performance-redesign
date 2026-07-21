@@ -1,0 +1,16 @@
+---
+import SiteLayout from '../../../layouts/SiteLayout.astro';
+import integrations from '../../../data/integrations.json';
+
+export function getStaticPaths() {
+  return integrations.map((integration) => ({ params: { tool: integration.slug }, props: { integration } }));
+}
+const { integration } = Astro.props;
+const title = `Govern ${integration.name} with Mault`;
+const description = integration.dek;
+const canonical = `/docs/integrations/${integration.slug}/`;
+---
+<SiteLayout title={`${title} | Mault`} description={description} canonical={canonical}>
+  <header class="page-hero integration-hero"><div class="shell"><p class="eyebrow">Mault integrations</p><img src={`/assets/agents/${integration.icon}`} alt="" width="64" height="64"/><h1>{title}</h1><p class="lede">{description}</p></div></header>
+  <article class="shell integration-article"><div class="integration-copy"><p class="eyebrow">How it works</p><h2>Control the action, not the model.</h2><p>{integration.workflow}</p><p>Mault is designed to work alongside {integration.name}. It does not replace the editor, agent, or model. It adds the deterministic enforcement, attribution, and evidence layer required when AI-assisted development touches production code.</p><h2>Controls for {integration.name}</h2><ul>{integration.controls.map((control)=><li>{control}</li>)}</ul><h2>A governed action</h2><p>When {integration.name} requests a state-changing action, Mault links it to an authenticated developer, captures the stated intent and affected scope, evaluates protected-path policy, then permits or blocks the action. The decision and supporting evidence are sealed for review.</p></div><aside class="integration-aside"><span class="status">Integration ready</span><img src={`/assets/agents/${integration.icon}`} alt="" width="58" height="58"/><h2>{integration.name}</h2><p>Local policy evaluation<br/>Developer attribution<br/>Audit-ready evidence</p><a class="button" href="/pilot/">Pilot this integration</a></aside></article>
+</SiteLayout>

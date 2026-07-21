@@ -6,6 +6,7 @@ const latest = (await readFile(path.join(sourceRoot, 'latest.txt'), 'utf8')).tri
 const captureRoot = path.join(sourceRoot, latest);
 const manifest = JSON.parse(await readFile(path.join(captureRoot, 'manifest.json'), 'utf8'));
 const routeMap = JSON.parse(await readFile(path.resolve('reference/route-map.json'), 'utf8'));
+const integrations = JSON.parse(await readFile(path.resolve('src/data/integrations.json'), 'utf8'));
 const articleMeta = {
   '/blog/mault-0-7-5-is-live/': { date: '2026-02-10', image: '/assets/blog/mault-governance.webp' },
   '/blog/mault-saves-you-tokens-time-and-your-codebase/': { date: '2026-02-04', image: '/assets/blog/mault-governance.webp' },
@@ -78,9 +79,10 @@ for (const route of routeMap.routes) {
 await mkdir(path.resolve('src/data'), { recursive: true });
 await writeFile(path.resolve('src/data/migrated-pages.json'), JSON.stringify(pages, null, 2));
 await mkdir(path.resolve('public'), { recursive: true });
-const publicRoutes = ['/', ...pages.map((page) => page.path)];
+const integrationRoutes = ['/docs/integrations/', ...integrations.map((item) => `/docs/integrations/${item.slug}/`)];
+const publicRoutes = ['/', ...pages.map((page) => page.path), ...integrationRoutes];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${publicRoutes.map((route) => `  <url><loc>https://mault.ai${route}</loc></url>`).join('\n')}\n</urlset>\n`;
 await writeFile(path.resolve('public/sitemap.xml'), sitemap);
-const llmsFull = ['# Mault public site', '', '> Independent redesign demo. Not an official Mault production deployment.', '', 'Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.', '', ...pages.map((page) => `## ${page.title}\n\nCanonical route: https://mault.ai${page.path}\n\n${page.description}`)].join('\n\n');
+const llmsFull = ['# Mault public site', '', '> Independent redesign demo. Not an official Mault production deployment.', '', 'Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.', '', ...pages.map((page) => `## ${page.title}\n\nCanonical route: https://mault.ai${page.path}\n\n${page.description}`), ...integrations.map((item) => `## Govern ${item.name} with Mault\n\nCanonical route: https://mault.ai/docs/integrations/${item.slug}/\n\n${item.dek}`)].join('\n\n');
 await writeFile(path.resolve('public/llms-full.txt'), `${llmsFull}\n`);
 console.log(`Generated ${pages.length} migrated routes from ${latest}`);

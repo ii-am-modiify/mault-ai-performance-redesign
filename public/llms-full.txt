@@ -141,3 +141,57 @@ If you think AI is ready to one-shot complex systems, you’re wrong. Unless, of
 Canonical route: https://mault.ai/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/
 
 For those getting into AI workloads, hardware matters more than you think. I spent yesterday testing multi-agent orchestration on a baseline system versus a mid-tier…
+
+## Govern Claude Code with Mault
+
+Canonical route: https://mault.ai/docs/integrations/claude-code/
+
+Apply deterministic policy to Claude Code actions before they change protected code.
+
+## Govern Cursor with Mault
+
+Canonical route: https://mault.ai/docs/integrations/cursor/
+
+Govern agent-assisted edits and commands inside the Cursor development workflow.
+
+## Govern GitHub Copilot with Mault
+
+Canonical route: https://mault.ai/docs/integrations/github-copilot/
+
+Extend governance from Copilot-assisted coding into pull requests and protected delivery paths.
+
+## Govern Windsurf with Mault
+
+Canonical route: https://mault.ai/docs/integrations/windsurf/
+
+Control agentic Windsurf workflows with local policy and verifiable action evidence.
+
+## Govern OpenAI Codex with Mault
+
+Canonical route: https://mault.ai/docs/integrations/openai-codex/
+
+Put deterministic controls around Codex tasks, commands, and repository changes.
+
+## Govern Augment with Mault
+
+Canonical route: https://mault.ai/docs/integrations/augment/
+
+Add enforceable controls to Augment-powered development across complex codebases.
+
+## Govern Cline with Mault
+
+Canonical route: https://mault.ai/docs/integrations/cline/
+
+Govern Cline file edits, terminal actions, and tool use from one local policy layer.
+
+## Govern Kiro with Mault
+
+Canonical route: https://mault.ai/docs/integrations/kiro/
+
+Turn Kiro workflows into policy-controlled, attributable engineering activity.
+
+## Govern Gemini with Mault
+
+Canonical route: https://mault.ai/docs/integrations/gemini/
+
+Govern Gemini coding workflows without changing the model or exposing source code.
