@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
     "build": "node scripts/build-content.mjs && astro check && astro build",
+    "verify": "npm run build && node scripts/verify-site.mjs",
     "preview": "astro preview --host 0.0.0.0",
     "check": "astro check"
   },

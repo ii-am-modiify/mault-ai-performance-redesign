@@ -10,15 +10,25 @@ export function getStaticPaths() {
 }
 const { page } = Astro.props;
 const isBlogIndex = page.path === '/blog/';
+const isArticle = page.path.startsWith('/blog/') && !isBlogIndex;
 const articles = pages.filter((item) => item.path.startsWith('/blog/') && item.path !== '/blog/');
 const normalizeType = (type: string) => type === 'h1' ? 'h2' : type;
+const formatDate = (date?: string) => date ? new Intl.DateTimeFormat('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`)) : '';
 ---
 <SiteLayout title={`${page.title} | Mault`} description={page.description} canonical={page.path}>
-  <header class="page-hero"><div class="shell"><p class="eyebrow">Mault</p><h1>{page.title}</h1><p class="lede">{page.description}</p></div></header>
+  <header class:list={["page-hero", { "article-hero": isArticle }]}><div class="shell"><p class="eyebrow">{isArticle ? 'Mault journal' : 'Mault'}</p><h1>{page.title}</h1><p class="lede">{page.description}</p>{isArticle && <div class="article-meta"><span>Mault Team</span><time datetime={page.date}>{formatDate(page.date)}</time><span>{Math.max(3, Math.round(page.blocks.length / 6))} min read</span></div>}</div></header>
   {isBlogIndex ? (
     <section class="shell blog-grid">
-      {articles.map((article) => <a class="blog-card" href={article.path}><p class="eyebrow">Article</p><h2>{article.title}</h2><p>{article.description}</p></a>)}
+      {articles.map((article) => <a class="blog-card" href={article.path}>{article.image && <img src={article.image} alt="" width="800" height="480" loading="lazy" />}<div class="blog-card-body"><p class="eyebrow">{formatDate(article.date) || 'Article'}</p><h2>{article.title}</h2><p>{article.description}</p><span>Read article →</span></div></a>)}
     </section>
+  ) : isArticle ? (
+    <article class="shell article-layout">
+      {page.image && <figure class="article-cover"><img src={page.image} alt="" width="1400" height="800" /></figure>}
+      <div class="article-prose prose">
+        {page.blocks.map((block) => { const Tag = normalizeType(block.type); return Tag === 'li' ? <p class="article-list-item">{block.text}</p> : <Tag>{block.text}</Tag>; })}
+      </div>
+      <footer class="article-end"><p class="eyebrow">Keep AI-generated code accountable</p><h2>Govern the code your AI writes.</h2><a class="button" href="/pilot/">Start a pilot</a></footer>
+    </article>
   ) : (
     <article class="shell prose">
       {page.blocks.map((block) => {

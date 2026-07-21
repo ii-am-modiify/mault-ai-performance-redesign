@@ -110,12 +110,13 @@ const nav = [
         const element = entry.target;
         const end = Number(element.getAttribute('data-count') || 0);
         const suffix = element.getAttribute('data-suffix') || '';
-        if (reducedMotion) { element.textContent = `${end}${suffix}`; counterObserver.unobserve(element); return; }
+        const decimals = Number(element.getAttribute('data-decimals') || 0);
+        if (reducedMotion) { element.textContent = `${end.toFixed(decimals)}${suffix}`; counterObserver.unobserve(element); return; }
         const start = performance.now();
         const animate = (now: number) => {
           const ratio = Math.min(1, (now - start) / 900);
           const eased = 1 - Math.pow(1 - ratio, 3);
-          element.textContent = `${Math.round(end * eased)}${suffix}`;
+          element.textContent = `${(end * eased).toFixed(decimals)}${suffix}`;
           if (ratio < 1) requestAnimationFrame(animate);
         };
         requestAnimationFrame(animate);

@@ -1,0 +1,6 @@
+Contact: mailto:security@fltechadventures.com
+Preferred-Languages: en
+Canonical: https://mault-v2.fltechadventures.com/.well-known/security.txt
+Policy: https://github.com/ii-am-modiify/mault-ai-performance-redesign/security/policy
+Expires: 2027-07-21T00:00:00.000Z
+

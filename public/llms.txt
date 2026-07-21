@@ -1,5 +1,10 @@
-# Mault
+# Mault performance redesign demo
 
-Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.
+Independent redesign prototype by Tech Adventures. This is not Mault's production website and is not affiliated with or endorsed by Mault.
 
-This preview is not the production website and is intentionally excluded from indexing.
+The demo presents Mault's public product story as a fast, accessible Astro experience focused on deterministic governance, observability, and audit-ready evidence for AI-assisted software development.
+
+- Full machine-readable route summary: /llms-full.txt
+- XML sitemap: /sitemap.xml
+- Security contact: /.well-known/security.txt
+- Source: https://github.com/ii-am-modiify/mault-ai-performance-redesign

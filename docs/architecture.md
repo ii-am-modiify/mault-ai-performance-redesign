@@ -19,7 +19,7 @@
 - Website: static content and progressive UI only.
 - Forms: explicit API endpoint selected after current form behavior and spam controls are documented.
 - Analytics: isolated consent-aware module; no tag is included merely because it existed in WordPress.
-- CMS: no runtime CMS in V1. Content collections and Git provide reviewable history. A headless editor can be evaluated separately.
+- CMS: the protected demo includes a deliberately simple Blog Studio UI for title, slug, date, author, excerpt, cover image, raw HTML content, SEO fields, preview, and draft/publish state. The first UI gate stores drafts in browser-local storage; the production publishing adapter will persist to the project API/database and regenerate the static blog without exposing a WordPress-style admin surface.
 
 ## Asset pipeline
 
