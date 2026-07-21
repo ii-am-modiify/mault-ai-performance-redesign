@@ -1,0 +1,143 @@
+# Mault public site
+
+
+
+> Independent redesign demo. Not an official Mault production deployment.
+
+
+
+Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.
+
+
+
+## Product
+
+Canonical route: https://mault.ai/platform/
+
+Learn more about Product.
+
+## How it Works
+
+Canonical route: https://mault.ai/how-it-works/
+
+Learn more about How it Works.
+
+## Mault Plans
+
+Canonical route: https://mault.ai/pricing/
+
+Learn more about Mault Plans.
+
+## Mault Enterprise – Scalable AI Governance for Engineering Teams
+
+Canonical route: https://mault.ai/enterprise/
+
+Unlock tailored AI governance for your organization with Mault Enterprise — customized policies, organizational enforcement, dedicated support, and compliance integration.
+
+## Mault Enterprise – Scalable AI Governance for Engineering Teams
+
+Canonical route: https://mault.ai/pilot/
+
+Unlock tailored AI governance for your organization with Mault Enterprise — customized policies, organizational enforcement, dedicated support, and compliance integration.
+
+## Contact
+
+Canonical route: https://mault.ai/contact/
+
+Learn more about Contact.
+
+## Mault FAQ – AI Coding Governance, Installation & Features
+
+Canonical route: https://mault.ai/faq/
+
+Get answers to common questions about Mault — installation, capabilities, compatibility, multi‑agent workflows, and how governance works in AI‑assisted development.
+
+## The Enterprise Pipeline That Doesn't Let AI Off the Hook
+
+Canonical route: https://mault.ai/blog/
+
+Learn more about The Enterprise Pipeline That Doesn't Let AI Off the Hook.
+
+## Ai Coder Guide
+
+Canonical route: https://mault.ai/docs/
+
+Learn more about Ai Coder Guide.
+
+## Ai Coder Guide
+
+Canonical route: https://mault.ai/docs/ai-coder-guide/
+
+Learn more about Ai Coder Guide.
+
+## Privacy Policy
+
+Canonical route: https://mault.ai/privacy/
+
+Learn more about Privacy Policy.
+
+## Terms of Service
+
+Canonical route: https://mault.ai/terms/
+
+Learn more about Terms of Service.
+
+## Cookie Policy
+
+Canonical route: https://mault.ai/cookie-policy/
+
+Learn more about Cookie Policy.
+
+## Refund & Billing Policy
+
+Canonical route: https://mault.ai/billing/
+
+Learn more about Refund & Billing Policy.
+
+## Hiring
+
+Canonical route: https://mault.ai/careers/
+
+Learn more about Hiring.
+
+## Mault 0.7.5 Is Live
+
+Canonical route: https://mault.ai/blog/mault-0-7-5-is-live/
+
+Learn more about Mault 0.7.5 Is Live.
+
+## Mault Saves You Tokens, Time, and Your Codebase
+
+Canonical route: https://mault.ai/blog/mault-saves-you-tokens-time-and-your-codebase/
+
+Learn more about Mault Saves You Tokens, Time, and Your Codebase.
+
+## Opus 4.6 Tanked the Market. Will It Replace SaaS?
+
+Canonical route: https://mault.ai/blog/opus-4-6-tanked-the-market-will-it-replace-saas/
+
+Learn more about Opus 4.6 Tanked the Market. Will It Replace SaaS?.
+
+## The Model Is Not the System
+
+Canonical route: https://mault.ai/blog/the-model-is-not-the-system/
+
+Learn more about The Model Is Not the System.
+
+## The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook
+
+Canonical route: https://mault.ai/blog/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/
+
+Learn more about The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook.
+
+## The Triage Report AI Vendors Don&#039;t Want You to See
+
+Canonical route: https://mault.ai/blog/the-triage-report-ai-vendors-dont-want-you-to-see/
+
+Learn more about The Triage Report AI Vendors Don&#039;t Want You to See.
+
+## We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened.
+
+Canonical route: https://mault.ai/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/
+
+Learn more about We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened..

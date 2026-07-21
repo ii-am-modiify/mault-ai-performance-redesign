@@ -6,9 +6,19 @@ const latest = (await readFile(path.join(sourceRoot, 'latest.txt'), 'utf8')).tri
 const captureRoot = path.join(sourceRoot, latest);
 const manifest = JSON.parse(await readFile(path.join(captureRoot, 'manifest.json'), 'utf8'));
 const routeMap = JSON.parse(await readFile(path.resolve('reference/route-map.json'), 'utf8'));
+const articleMeta = {
+  '/blog/mault-0-7-5-is-live/': { date: '2026-02-10', image: '/assets/blog/mault-governance.webp' },
+  '/blog/mault-saves-you-tokens-time-and-your-codebase/': { date: '2026-02-04', image: '/assets/blog/mault-governance.webp' },
+  '/blog/opus-4-6-tanked-the-market-will-it-replace-saas/': { date: '2026-02-06', image: '/assets/blog/mault-governance.webp' },
+  '/blog/the-model-is-not-the-system/': { date: '2026-02-06', image: '/assets/blog/mault-governance.webp' },
+  '/blog/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/': { date: '2026-04-01', image: '/assets/blog/enterprise-pipeline.webp' },
+  '/blog/the-triage-report-ai-vendors-dont-want-you-to-see/': { date: '2026-03-28', image: '/assets/blog/mault-governance.webp' },
+  '/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/': { date: '2026-03-16', image: '/assets/blog/multi-agent-orchestration.webp' },
+};
 const decode = (s='') => s.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ')
   .replace(/<[^>]+>/g,' ').replaceAll('&nbsp;',' ').replaceAll('&amp;','&').replaceAll('&#038;','&')
-  .replaceAll('&#8217;',"'").replaceAll('&#8211;','–').replaceAll('&quot;','"').replace(/\s+/g,' ').trim();
+  .replaceAll('&#8217;',"'").replaceAll('&#8211;','–').replaceAll('&#039;',"'").replaceAll('&quot;','"')
+  .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code))).replace(/\s+/g,' ').trim();
 const cleanTitle = (title='') => title.replace(/\s*[|–-]\s*Mault.*$/i,'').trim();
 const pick = (source) => manifest.records.find((record) => new URL(record.url).pathname === source);
 const pages = [];
@@ -31,6 +41,7 @@ for (const route of routeMap.routes) {
     title: cleanTitle(h1 || record.title || route.target.split('/').filter(Boolean).at(-1)),
     description: record.description || `Learn more about ${cleanTitle(h1 || record.title || 'Mault')}.`,
     blocks: uniqueBlocks.filter((block) => block.text !== h1).slice(0, 160),
+    ...articleMeta[route.target],
   });
 }
 await mkdir(path.resolve('src/data'), { recursive: true });
@@ -39,6 +50,6 @@ await mkdir(path.resolve('public'), { recursive: true });
 const publicRoutes = ['/', ...pages.map((page) => page.path)];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${publicRoutes.map((route) => `  <url><loc>https://mault.ai${route}</loc></url>`).join('\n')}\n</urlset>\n`;
 await writeFile(path.resolve('public/sitemap.xml'), sitemap);
-const llmsFull = ['# Mault public site', '', 'Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.', '', ...pages.map((page) => `## ${page.title}\n\nProduction URL: https://mault.ai${page.path}\n\n${page.description}`)].join('\n\n');
+const llmsFull = ['# Mault public site', '', '> Independent redesign demo. Not an official Mault production deployment.', '', 'Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.', '', ...pages.map((page) => `## ${page.title}\n\nCanonical route: https://mault.ai${page.path}\n\n${page.description}`)].join('\n\n');
 await writeFile(path.resolve('public/llms-full.txt'), `${llmsFull}\n`);
 console.log(`Generated ${pages.length} migrated routes from ${latest}`);

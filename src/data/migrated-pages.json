@@ -1,0 +1,2008 @@
+[
+  {
+    "path": "/platform/",
+    "source": "/product/",
+    "title": "Product",
+    "description": "Learn more about Product.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Product"
+      }
+    ]
+  },
+  {
+    "path": "/how-it-works/",
+    "source": "/how-it-works/",
+    "title": "How it Works",
+    "description": "Learn more about How it Works.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Mault"
+      },
+      {
+        "type": "h2",
+        "text": "Unleash AI across your development team. Safely."
+      },
+      {
+        "type": "h2",
+        "text": "The Gap"
+      },
+      {
+        "type": "h2",
+        "text": "AI adoption is everywhere. The ROI isn't."
+      },
+      {
+        "type": "h2",
+        "text": "Without Mault"
+      },
+      {
+        "type": "h2",
+        "text": "Ungoverned AI creates risk and rework."
+      },
+      {
+        "type": "h2",
+        "text": "With Mault"
+      },
+      {
+        "type": "h2",
+        "text": "Deploy AI across your org. Capture the ROI."
+      },
+      {
+        "type": "h2",
+        "text": "See It In Action"
+      },
+      {
+        "type": "h2",
+        "text": "Govern Multi-Agent Workflows at Scale."
+      },
+      {
+        "type": "h2",
+        "text": "Six governed agents"
+      },
+      {
+        "type": "h2",
+        "text": "Two modes"
+      },
+      {
+        "type": "h2",
+        "text": "Production-ready output"
+      },
+      {
+        "type": "h2",
+        "text": "How It Works"
+      },
+      {
+        "type": "h2",
+        "text": "The only multi-agent workflow with governance built in."
+      },
+      {
+        "type": "p",
+        "text": "Your standards ship. Not suggestions. Enforcement runs at every stage — while the agent works, before the file is saved, at commit, and before it can ship to production. Bad code gets caught before it can exist."
+      },
+      {
+        "type": "p",
+        "text": "Every agent stays in its lane. Six specialized agents. Each scoped, isolated, and unable to overstep. AI moves fast without creating ungoverned output that ends up as a production incident. You stay in control. Every decision logged automatically. Full visibility without adding process or slowing anyone down. Results Your development team. At AI speed. Without the risk. 10x PR Velocity With Near-Zero Reverts Finally unlock the velocity AI was meant to give by removing the rework it creates. The ceiling on what a governed team can ship just changed. Deploy AI Coding Tools Across Your Org. Safely. Give every engineer AI coding tools without the governance risk. Mault enforces your standards so you don't have to choose between velocity and control. Free Senior Engineers from Review Debt Stop burning your best engineers on manual review cycles. Mault catches what AI breaks before it lands in their queue. Full Auditability on Every Agent Action Every decision, every handoff, every output logged automatically. Compliance isn't an afterthought. It's built into the workflow. Unlock Your Roadmap Less time fixing what AI breaks. More time building what your roadmap demands. Governance removes the drag, not the speed. Scale Agents Without Scaling Risk Add more agents, more engineers, more workflows — the governance layer scales with you. Your standards hold at any size. Schedule a Call We'll show you exactly what Mault looks like inside your stack. We'll walk through how Mault fits your stack, your team size, and your current AI tooling and show you exactly where your rework is coming from. Please enable JavaScript in your browser to complete this form. Please enable JavaScript in your browser to complete this form. Name * First Last Work email * Company * Role What looking Team size * --- Select Choice --- 2–10 11–50 51–200 200+ Role * --- Select Choice --- CTO VP Engineering Director of Engineering Engineering Manager Staff / Principal Engineer Other What are you looking for? Schedule a Call Mault Finish setup on desktop Mault runs in VS Code and can’t be installed on mobile. We’ll email you the install link."
+      },
+      {
+        "type": "p",
+        "text": "Stay in the loop. Unlock 50% off Pro"
+      },
+      {
+        "type": "p",
+        "text": "SOURCE"
+      },
+      {
+        "type": "h2",
+        "text": "Away from your desk?"
+      }
+    ]
+  },
+  {
+    "path": "/pricing/",
+    "source": "/mault-plans/",
+    "title": "Mault Plans",
+    "description": "Learn more about Mault Plans.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Core vs Pro"
+      },
+      {
+        "type": "h2",
+        "text": "MAULT CORE (FREE)"
+      },
+      {
+        "type": "h2",
+        "text": "Core Capabilities"
+      },
+      {
+        "type": "li",
+        "text": "Continuously analyzes project structure in real tim"
+      },
+      {
+        "type": "li",
+        "text": "Detects architectural drift, misplaced files, and unhealthy patterns"
+      },
+      {
+        "type": "li",
+        "text": "Surfaces issues inside VS Code via the Custom Mault Panel"
+      },
+      {
+        "type": "li",
+        "text": "Provides copy-ready prompts that developers can manually apply with AI coding assistants"
+      },
+      {
+        "type": "li",
+        "text": "Allows dismiss and reload actions without interrupting workflow"
+      },
+      {
+        "type": "h2",
+        "text": "Included Use Cases"
+      },
+      {
+        "type": "li",
+        "text": "Structural Integrity:"
+      },
+      {
+        "type": "li",
+        "text": "Directory Reinforcement"
+      },
+      {
+        "type": "li",
+        "text": "Flat Architecture"
+      },
+      {
+        "type": "li",
+        "text": "Overcrowded Folders"
+      },
+      {
+        "type": "li",
+        "text": "Legacy and Hygiene:"
+      },
+      {
+        "type": "li",
+        "text": "Legacy Path Prevention"
+      },
+      {
+        "type": "li",
+        "text": "Obsolete Folders"
+      },
+      {
+        "type": "li",
+        "text": "Temp Files"
+      },
+      {
+        "type": "li",
+        "text": "Naming and Organization:"
+      },
+      {
+        "type": "li",
+        "text": "Convention Reinforcement"
+      },
+      {
+        "type": "li",
+        "text": "File Proliferation"
+      },
+      {
+        "type": "li",
+        "text": "Scattered Utils"
+      },
+      {
+        "type": "li",
+        "text": "Environment and Configuration:"
+      },
+      {
+        "type": "li",
+        "text": "Environment Reinforcement"
+      },
+      {
+        "type": "li",
+        "text": "Configuration Chao"
+      },
+      {
+        "type": "li",
+        "text": "Advanced Intelligence:"
+      },
+      {
+        "type": "li",
+        "text": "Dependency Flow Analysis"
+      },
+      {
+        "type": "li",
+        "text": "Dependency Health and Basic Security"
+      },
+      {
+        "type": "li",
+        "text": "Dependency Diagrams"
+      },
+      {
+        "type": "li",
+        "text": "Structural Governance and Architectural Drift"
+      },
+      {
+        "type": "h2",
+        "text": "MAULT PRO (PRODUCTION ENFORCEMENT)"
+      },
+      {
+        "type": "h2",
+        "text": "PRODUCTION-READINESS KIT (INCLUDED WITH ACTIVATION)"
+      },
+      {
+        "type": "li",
+        "text": "For a one-time activation, users receive:"
+      },
+      {
+        "type": "li",
+        "text": "1,500 hours of R&D distilled into a guided setup using a research-backed infrastructure roadmap"
+      },
+      {
+        "type": "li",
+        "text": "Proven production principles used to build Mault itself, including Hexagonal Architecture and the Mock Tax"
+      },
+      {
+        "type": "li",
+        "text": "A guided, automated setup that takes approximately 30 minutes"
+      },
+      {
+        "type": "li",
+        "text": "The initial monthly subscription is included with activation"
+      },
+      {
+        "type": "h2",
+        "text": "WHAT PRO ADDS"
+      },
+      {
+        "type": "li",
+        "text": "Automatic enforcement. While Core detects, Pro enforces. Non-compliant commits are blocked automatically with no manual intervention."
+      },
+      {
+        "type": "li",
+        "text": "Ongoing production readiness through regular feature enhancements, additional languages, multi-agent support, and new environments"
+      },
+      {
+        "type": "li",
+        "text": "Early access to new use cases 60 days before they are released to Core"
+      },
+      {
+        "type": "li",
+        "text": "Active security and hallucination guard at commit time"
+      },
+      {
+        "type": "h2",
+        "text": "COMPARISON"
+      },
+      {
+        "type": "h2",
+        "text": "Features"
+      },
+      {
+        "type": "h2",
+        "text": "Core"
+      },
+      {
+        "type": "h2",
+        "text": "Pro"
+      },
+      {
+        "type": "h2",
+        "text": "WHO PRO IS FOR"
+      }
+    ]
+  },
+  {
+    "path": "/enterprise/",
+    "source": "/enterprise/",
+    "title": "Mault Enterprise – Scalable AI Governance for Engineering Teams",
+    "description": "Unlock tailored AI governance for your organization with Mault Enterprise — customized policies, organizational enforcement, dedicated support, and compliance integration.",
+    "blocks": [
+      {
+        "type": "h3",
+        "text": "Back to Mault"
+      },
+      {
+        "type": "h2",
+        "text": "Enterprise"
+      },
+      {
+        "type": "h2",
+        "text": "Bring Deterministic Governance to Your Engineering Organization"
+      },
+      {
+        "type": "h2",
+        "text": "Everything in Pro, plus"
+      },
+      {
+        "type": "li",
+        "text": "Custom governance rule design"
+      },
+      {
+        "type": "li",
+        "text": "Organization-wide enforcement configuration"
+      },
+      {
+        "type": "li",
+        "text": "Tailored onboarding and workflow alignment"
+      },
+      {
+        "type": "li",
+        "text": "Dedicated support"
+      },
+      {
+        "type": "li",
+        "text": "CI/CD integration guidance"
+      },
+      {
+        "type": "li",
+        "text": "Policy customization across teams"
+      },
+      {
+        "type": "h2",
+        "text": "Get in touch"
+      }
+    ]
+  },
+  {
+    "path": "/pilot/",
+    "source": "/pilot/",
+    "title": "Mault Enterprise – Scalable AI Governance for Engineering Teams",
+    "description": "Unlock tailored AI governance for your organization with Mault Enterprise — customized policies, organizational enforcement, dedicated support, and compliance integration.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Mault · 45-Day Pilot"
+      },
+      {
+        "type": "h2",
+        "text": "Request a Mault pilot"
+      },
+      {
+        "type": "h2",
+        "text": "Who this is for"
+      },
+      {
+        "type": "h2",
+        "text": "What the pilot looks like"
+      },
+      {
+        "type": "li",
+        "text": "45 days, scoped to your stack"
+      },
+      {
+        "type": "li",
+        "text": "$999, credited toward a continuing agreement"
+      },
+      {
+        "type": "li",
+        "text": "Up to 5 developers"
+      },
+      {
+        "type": "li",
+        "text": "Local or air-gapped, no code leaves your environment"
+      },
+      {
+        "type": "li",
+        "text": "Install walkthrough plus weekly check-ins"
+      },
+      {
+        "type": "h2",
+        "text": "Apply for the pilot"
+      },
+      {
+        "type": "li",
+        "text": "Claude Code"
+      },
+      {
+        "type": "li",
+        "text": "Cursor"
+      },
+      {
+        "type": "li",
+        "text": "GitHub Copilot"
+      },
+      {
+        "type": "li",
+        "text": "Windsurf"
+      },
+      {
+        "type": "li",
+        "text": "OpenAI Codex"
+      },
+      {
+        "type": "li",
+        "text": "Augment"
+      },
+      {
+        "type": "li",
+        "text": "Cline"
+      },
+      {
+        "type": "li",
+        "text": "Kiro"
+      },
+      {
+        "type": "li",
+        "text": "Gemini"
+      },
+      {
+        "type": "li",
+        "text": "Not using agents yet"
+      }
+    ]
+  },
+  {
+    "path": "/contact/",
+    "source": "/contact/",
+    "title": "Contact",
+    "description": "Learn more about Contact.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Let's talk."
+      }
+    ]
+  },
+  {
+    "path": "/faq/",
+    "source": "/faq/",
+    "title": "Mault FAQ – AI Coding Governance, Installation & Features",
+    "description": "Get answers to common questions about Mault — installation, capabilities, compatibility, multi‑agent workflows, and how governance works in AI‑assisted development.",
+    "blocks": [
+      {
+        "type": "p",
+        "text": "Back to Mault FAQ Common questions. Straight answers. Everything you need to know before you install. If something's missing, send it through ."
+      },
+      {
+        "type": "h2",
+        "text": "Getting Started"
+      },
+      {
+        "type": "h2",
+        "text": "Compatibility"
+      },
+      {
+        "type": "h2",
+        "text": "How It Works"
+      },
+      {
+        "type": "h2",
+        "text": "Security & Privacy"
+      },
+      {
+        "type": "h2",
+        "text": "Pricing"
+      }
+    ]
+  },
+  {
+    "path": "/blog/",
+    "source": "/blog/",
+    "title": "The Enterprise Pipeline That Doesn't Let AI Off the Hook",
+    "description": "Learn more about The Enterprise Pipeline That Doesn't Let AI Off the Hook.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Perspectives from the team"
+      },
+      {
+        "type": "p",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "April 1, 2026"
+      },
+      {
+        "type": "p",
+        "text": "Read More James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "March 28, 2026"
+      },
+      {
+        "type": "h1",
+        "text": "The Triage Report AI Vendors Don't Want You to See"
+      },
+      {
+        "type": "p",
+        "text": "March 16, 2026"
+      },
+      {
+        "type": "h1",
+        "text": "We Tested Multi-Agent Orchestration on Two Different Machines. Here's What Happened."
+      },
+      {
+        "type": "p",
+        "text": "February 10, 2026"
+      },
+      {
+        "type": "h1",
+        "text": "Mault 0.7.5 Is Live"
+      },
+      {
+        "type": "p",
+        "text": "February 6, 2026"
+      },
+      {
+        "type": "h1",
+        "text": "Opus 4.6 Tanked the Market. Will It Replace SaaS?"
+      },
+      {
+        "type": "p",
+        "text": "Read More Kimberley Modeste (CEO)"
+      },
+      {
+        "type": "h1",
+        "text": "The Model Is Not the System"
+      },
+      {
+        "type": "h3",
+        "text": "Read More"
+      }
+    ]
+  },
+  {
+    "path": "/docs/",
+    "source": "/docs/",
+    "title": "Ai Coder Guide",
+    "description": "Learn more about Ai Coder Guide.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "AI Coder Guide"
+      }
+    ]
+  },
+  {
+    "path": "/docs/ai-coder-guide/",
+    "source": "/docs/ai-coder-guide/",
+    "title": "Ai Coder Guide",
+    "description": "Learn more about Ai Coder Guide.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "AI Coder Guide"
+      }
+    ]
+  },
+  {
+    "path": "/privacy/",
+    "source": "/privacy/",
+    "title": "Privacy Policy",
+    "description": "Learn more about Privacy Policy.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Privacy Policy"
+      },
+      {
+        "type": "h2",
+        "text": "Last Updated: December 2025"
+      },
+      {
+        "type": "h2",
+        "text": "Overview"
+      },
+      {
+        "type": "h2",
+        "text": "Information We Collect"
+      },
+      {
+        "type": "li",
+        "text": "Core governance and integrity analysis is performed locally within the user’s editor."
+      },
+      {
+        "type": "li",
+        "text": "When certain features are explicitly invoked by the user (including AI-powered analysis or architecture visualization), Mault may temporarily process small, relevant code snippets."
+      },
+      {
+        "type": "li",
+        "text": "Code snippets are:"
+      },
+      {
+        "type": "li",
+        "text": "Processed in memory only"
+      },
+      {
+        "type": "li",
+        "text": "Request-scoped and discarded immediately after use"
+      },
+      {
+        "type": "li",
+        "text": "Not stored or retained by Mault"
+      },
+      {
+        "type": "li",
+        "text": "Not logged"
+      },
+      {
+        "type": "li",
+        "text": "Not used to train machine learning models"
+      },
+      {
+        "type": "li",
+        "text": "Feature usage events"
+      },
+      {
+        "type": "li",
+        "text": "Performance metrics"
+      },
+      {
+        "type": "li",
+        "text": "Error and crash diagnostics"
+      },
+      {
+        "type": "li",
+        "text": "Extension version and runtime environment metadata"
+      },
+      {
+        "type": "li",
+        "text": "We receive limited account identifiers necessary for authentication"
+      },
+      {
+        "type": "li",
+        "text": "Credentials are handled by the third-party provider"
+      },
+      {
+        "type": "li",
+        "text": "Mault does not store user passwords"
+      },
+      {
+        "type": "h2",
+        "text": "AI-Powered Features"
+      },
+      {
+        "type": "li",
+        "text": "AI-powered features are optional and only process data when explicitly enabled or invoked by the user."
+      },
+      {
+        "type": "li",
+        "text": "When used, limited code snippets may be transmitted to third-party AI service providers for the sole purpose of performing the requested analysis."
+      },
+      {
+        "type": "li",
+        "text": "Code snippets are processed ephemerally and are not stored or retained by Mault."
+      },
+      {
+        "type": "li",
+        "text": "User code is not used to train machine learning models by Mault."
+      },
+      {
+        "type": "h2",
+        "text": "How We Use Information"
+      },
+      {
+        "type": "li",
+        "text": "Provide and operate the Services"
+      },
+      {
+        "type": "li",
+        "text": "Enforce governance and integrity rules"
+      },
+      {
+        "type": "li",
+        "text": "Authenticate users and manage subscriptions"
+      },
+      {
+        "type": "li",
+        "text": "Improve reliability, performance, and stability"
+      },
+      {
+        "type": "li",
+        "text": "Diagnose errors and prevent misuse"
+      },
+      {
+        "type": "li",
+        "text": "Comply with legal obligations"
+      },
+      {
+        "type": "h2",
+        "text": "Data Retention"
+      },
+      {
+        "type": "li",
+        "text": "Code snippets processed for AI-powered features are discarded immediately after use."
+      },
+      {
+        "type": "li",
+        "text": "Usage and diagnostic data is retained only as long as reasonably necessary for operational and improvement purposes."
+      },
+      {
+        "type": "li",
+        "text": "Mault does not maintain long-term storage of user source code or project data."
+      },
+      {
+        "type": "h2",
+        "text": "Data Sharing"
+      },
+      {
+        "type": "li",
+        "text": "Infrastructure and hosting providers"
+      },
+      {
+        "type": "li",
+        "text": "Authentication providers"
+      },
+      {
+        "type": "li",
+        "text": "Analytics and diagnostics services"
+      },
+      {
+        "type": "li",
+        "text": "AI service providers (only when features are explicitly used)"
+      },
+      {
+        "type": "li",
+        "text": "Payment processors (Stripe)"
+      },
+      {
+        "type": "h2",
+        "text": "Cookies and Website Data"
+      },
+      {
+        "type": "li",
+        "text": "Session functionality"
+      },
+      {
+        "type": "li",
+        "text": "Authentication"
+      },
+      {
+        "type": "li",
+        "text": "Analytics"
+      },
+      {
+        "type": "li",
+        "text": "Preference storage"
+      },
+      {
+        "type": "h2",
+        "text": "Security"
+      },
+      {
+        "type": "h2",
+        "text": "Your Choices"
+      },
+      {
+        "type": "li",
+        "text": "Disable optional AI-powered features"
+      },
+      {
+        "type": "li",
+        "text": "Control telemetry settings where available"
+      },
+      {
+        "type": "li",
+        "text": "Uninstall the extension at any time"
+      },
+      {
+        "type": "li",
+        "text": "Stop using the Services at your discretion"
+      },
+      {
+        "type": "h2",
+        "text": "Changes to This Policy"
+      },
+      {
+        "type": "h2",
+        "text": "Contact Us"
+      }
+    ]
+  },
+  {
+    "path": "/terms/",
+    "source": "/terms/",
+    "title": "Terms of Service",
+    "description": "Learn more about Terms of Service.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Terms Of Service"
+      },
+      {
+        "type": "h2",
+        "text": "Last Updated: December 2025"
+      },
+      {
+        "type": "h2",
+        "text": "Eligibility"
+      },
+      {
+        "type": "h2",
+        "text": "Description of Services"
+      },
+      {
+        "type": "li",
+        "text": "AI-powered code integrity checks"
+      },
+      {
+        "type": "li",
+        "text": "Structural memory and project architecture enforcement"
+      },
+      {
+        "type": "li",
+        "text": "Real-time detectors for architectural drift and inconsistencies"
+      },
+      {
+        "type": "li",
+        "text": "Optional integrations with third-party AI providers"
+      },
+      {
+        "type": "h2",
+        "text": "User Responsibilities"
+      },
+      {
+        "type": "li",
+        "text": "Use the Services lawfully and responsibly"
+      },
+      {
+        "type": "li",
+        "text": "Review all AI-generated suggestions before applying them"
+      },
+      {
+        "type": "li",
+        "text": "Maintain backups of your code and environments"
+      },
+      {
+        "type": "h2",
+        "text": "AI-Generated Output"
+      },
+      {
+        "type": "h2",
+        "text": "No Warranty"
+      },
+      {
+        "type": "h2",
+        "text": "Limitation of Liability"
+      },
+      {
+        "type": "h2",
+        "text": "Subscription and Billing"
+      },
+      {
+        "type": "h2",
+        "text": "Data Handling"
+      },
+      {
+        "type": "h2",
+        "text": "Termination"
+      },
+      {
+        "type": "h2",
+        "text": "Governing Law"
+      },
+      {
+        "type": "h2",
+        "text": "Changes to These Terms"
+      }
+    ]
+  },
+  {
+    "path": "/cookie-policy/",
+    "source": "/cookie-policy/",
+    "title": "Cookie Policy",
+    "description": "Learn more about Cookie Policy.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Cookie Policy"
+      },
+      {
+        "type": "h2",
+        "text": "Last Updated: December 2025"
+      },
+      {
+        "type": "h2",
+        "text": "Use of Cookies"
+      },
+      {
+        "type": "li",
+        "text": "Essential session functionality"
+      },
+      {
+        "type": "li",
+        "text": "User authentication"
+      },
+      {
+        "type": "li",
+        "text": "Website analytics"
+      },
+      {
+        "type": "li",
+        "text": "Feature preferences"
+      }
+    ]
+  },
+  {
+    "path": "/billing/",
+    "source": "/billing/",
+    "title": "Refund & Billing Policy",
+    "description": "Learn more about Refund & Billing Policy.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Refund & Billing Policy"
+      },
+      {
+        "type": "h2",
+        "text": "Last Updated: December 2025"
+      },
+      {
+        "type": "h2",
+        "text": "Subscriptions"
+      },
+      {
+        "type": "h2",
+        "text": "Free Trials"
+      },
+      {
+        "type": "h2",
+        "text": "Refunds"
+      },
+      {
+        "type": "li",
+        "text": "Duplicate charges"
+      },
+      {
+        "type": "li",
+        "text": "Billing errors caused by Mault"
+      },
+      {
+        "type": "li",
+        "text": "Verified inability to access the Services due to a technical fault on Mault’s side"
+      },
+      {
+        "type": "h2",
+        "text": "Cancellations"
+      },
+      {
+        "type": "li",
+        "text": "Cancellation prevents future renewals"
+      },
+      {
+        "type": "li",
+        "text": "Cancellation does not result in a refund or credit for any unused portion of the current billing period"
+      },
+      {
+        "type": "li",
+        "text": "Access to the Services will continue until the end of the current paid period"
+      },
+      {
+        "type": "h2",
+        "text": "Plan Changes"
+      },
+      {
+        "type": "h2",
+        "text": "Pricing Changes"
+      },
+      {
+        "type": "h2",
+        "text": "Taxes & Fees"
+      },
+      {
+        "type": "h2",
+        "text": "Changes to Tax Collection"
+      },
+      {
+        "type": "h2",
+        "text": "Contact"
+      }
+    ]
+  },
+  {
+    "path": "/careers/",
+    "source": "/hiring/",
+    "title": "Hiring",
+    "description": "Learn more about Hiring.",
+    "blocks": [
+      {
+        "type": "li",
+        "text": "Mault Now Hiring Prove you can learn . That is the whole interview. We do not start with resumes. We do not care about your degree, your job title, or how many years you have been doing this. We care about one thing: can you learn a new system quickly with AI as your partner? The tests below take about an hour. And worst case scenario, you walk away with hands-on experience in VS Code, GitHub, and vibe coding that you can put on your resume. You have nothing to lose. Why We Do It This Way The gatekeepers had their turn. Traditional hiring filters for credentials. We filter for capability. The three tests below are your interview. They should take about an hour and they are designed so that anyone with the right mindset can pass, regardless of background. What does not matter Your degree. Your previous job title. Whether you have 10 years of experience or 10 weeks. Whether you went to Stanford or never went to college. Whether you can pass a whiteboard interview. What matters How quickly you learn new systems. How comfortable you are using AI as a building partner. How clearly you communicate. Whether you can get from zero to something working without someone walking you through it. Screencast Format Show us VS Code and GitHub. Side by side. Your screencast should be split screen. VS Code on one half, GitHub on the other. We want to see how your local work connects to the remote artifacts. This is how we demo our product and it is how you will demo it too. your-screencast.mp4 ■ VS Code AI scaffolding the project"
+      },
+      {
+        "type": "li",
+        "text": "Terminal running commands"
+      },
+      {
+        "type": "li",
+        "text": "AI creating issues via CLI"
+      },
+      {
+        "type": "li",
+        "text": "You prompting, iterating"
+      },
+      {
+        "type": "h2",
+        "text": "● GitHub"
+      },
+      {
+        "type": "li",
+        "text": "Repo created with code"
+      },
+      {
+        "type": "li",
+        "text": "Commits showing up"
+      },
+      {
+        "type": "li",
+        "text": "Issues appearing live"
+      },
+      {
+        "type": "li",
+        "text": "The proof of your work"
+      },
+      {
+        "type": "h2",
+        "text": "Screencast Format"
+      },
+      {
+        "type": "h2",
+        "text": "Show us VS Code and GitHub. Side by side."
+      },
+      {
+        "type": "h2",
+        "text": "Test 1 of 3"
+      },
+      {
+        "type": "h2",
+        "text": "The Cold Start"
+      },
+      {
+        "type": "p",
+        "text": "Bonus: Enable thinking / extended thinking"
+      },
+      {
+        "type": "h2",
+        "text": "Test 2 of 3"
+      },
+      {
+        "type": "p",
+        "text": "Builds on Test 1"
+      },
+      {
+        "type": "h2",
+        "text": "Source Control Setup"
+      },
+      {
+        "type": "h2",
+        "text": "Test 3 of 3"
+      },
+      {
+        "type": "p",
+        "text": "Builds on Test 2"
+      },
+      {
+        "type": "h2",
+        "text": "Feature Planning"
+      },
+      {
+        "type": "h2",
+        "text": "Extra Credit"
+      },
+      {
+        "type": "h2",
+        "text": "The Video Intro"
+      },
+      {
+        "type": "h2",
+        "text": "What to Send"
+      },
+      {
+        "type": "h2",
+        "text": "Two links. One email. That is it."
+      },
+      {
+        "type": "p",
+        "text": "Google Drive Folder Create a folder with your screencast(s) covering Tests 1-3 (one video or three separate ones) and your video intro if you did the extra credit. Set sharing to “anyone with the link.” Name your files clearly so we know what we are looking at: Folder: FirstName-LastName-Mault-SA Screencast: FirstName-LastName-Technical.mp4 Video intro: FirstName-LastName-Intro.mp4 GitHub Repo Link The public repo with your project code and 3-5 issues. We will check that the code is pushed and the issues are real. Folder: FirstName-LastName-Mault-SA Screencast: FirstName-LastName-Technical.mp4 Video intro: FirstName-LastName-Intro.mp4 What we are NOT judging We are not judging the quality of the code, the complexity of the project, or what language you chose. We do not care if it is a 10-line script or a full-stack app. We care about whether you are comfortable using AI as a building partner and whether you can get from zero to something working without someone walking you through it. If you have never used VS Code, GitHub, or the terminal before, that is completely fine. Use AI to help you learn. That is literally the test. Ready? Email both links (Google Drive folder + GitHub repo) to the address below. No Google Drive link, no interview. No GitHub repo link, no interview. Your email must include your full name, location, and contact information. Two links and nothing else. hiring@mault.ai"
+      },
+      {
+        "type": "h2",
+        "text": "Mault"
+      },
+      {
+        "type": "h2",
+        "text": "Finish setup on desktop"
+      },
+      {
+        "type": "p",
+        "text": "Stay in the loop. Unlock 50% off Pro"
+      },
+      {
+        "type": "p",
+        "text": "SOURCE"
+      },
+      {
+        "type": "h2",
+        "text": "Away from your desk?"
+      }
+    ]
+  },
+  {
+    "path": "/blog/mault-0-7-5-is-live/",
+    "source": "/mault-0-7-5-is-live/",
+    "title": "Mault 0.7.5 Is Live",
+    "description": "Learn more about Mault 0.7.5 Is Live.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Mault 0.7.5 Is Live"
+      },
+      {
+        "type": "h3",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "02/10/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog Claude Runtime Hooks, Enforceable TDD, Modified Ralph Loops, and More This release is about one thing. Enforcement."
+      },
+      {
+        "type": "p",
+        "text": "Mault 0.7.5 pushes deeper into runtime verification, deterministic setup, and AI-native development workflows. If AI is generating more of your code, the system verifying that code must operate at the same speed."
+      },
+      {
+        "type": "p",
+        "text": "Here is what shipped."
+      },
+      {
+        "type": "p",
+        "text": "Mault Core 0.7.5 (Free)"
+      },
+      {
+        "type": "p",
+        "text": "Claude Code Runtime Hooks"
+      },
+      {
+        "type": "p",
+        "text": "We introduced enforceable TDD hooks for Claude Code. An agent can no longer edit a source file without a corresponding test. This is not advisory logic or linting feedback. It is runtime enforcement."
+      },
+      {
+        "type": "p",
+        "text": "For Cursor, Copilot, Windsurf, and Augment, we provide structured testing rule configurations today. Full runtime enforcement for non-Claude agents is coming to Mault Pro. The direction is clear. If code changes, tests must exist. That requirement is enforced at the moment of change, not later in CI."
+      },
+      {
+        "type": "p",
+        "text": "Specialized Agentic Setup (Steps 1–3)"
+      },
+      {
+        "type": "p",
+        "text": "Mault now enables your AI coder to configure Git, environment security, and Docker correctly in under fifteen minutes. This is not scaffolding for demos. It is the same production configuration we use internally at Mault."
+      },
+      {
+        "type": "p",
+        "text": "Each step includes built-in verification loops inspired by the Ralph Loop protocol. Every configuration action produces proof-of-completion receipts and handshake GitHub Issues. Scripts validate real filesystem state instead of assuming success based on output alone."
+      },
+      {
+        "type": "p",
+        "text": "There are no manual checks. There are no symbolic green confirmations. The system verifies that what was intended actually exists."
+      },
+      {
+        "type": "p",
+        "text": "mault.yaml Auditing"
+      },
+      {
+        "type": "p",
+        "text": "Your project rulebook receives the same enforcement treatment."
+      },
+      {
+        "type": "p",
+        "text": "Verification checks now catch hallucinated paths and invalid configuration before detectors even execute. Temporary canary files confirm that every declared rule resolves against actual project structure. This eliminates false positives caused by AI-generated configuration errors and ensures that governance rules are grounded in real repository state."
+      },
+      {
+        "type": "p",
+        "text": "Mault Pro 0.7.5"
+      },
+      {
+        "type": "p",
+        "text": "Step 4: CI Pipeline"
+      },
+      {
+        "type": "p",
+        "text": "The CI workflow we use on Mault’s own codebase is now available to you. It is designed specifically for agentic workflows where AI writes a meaningful portion of the code and verification becomes more critical than ever."
+      },
+      {
+        "type": "p",
+        "text": "With a single prompt, the system sets up a full CI pipeline complete with built-in verification loops, proof-of-completion receipts, and a handshake GitHub Issue and pull request. The pipeline does not simply exist. It is validated against repository state and confirmed through recorded artifacts."
+      },
+      {
+        "type": "p",
+        "text": "It configures. It verifies. It proves."
+      },
+      {
+        "type": "p",
+        "text": "Step 5: TDD Framework"
+      },
+      {
+        "type": "p",
+        "text": "This is where enforcement deepens."
+      },
+      {
+        "type": "p",
+        "text": "CodeLens detectors now alert when an agent skips writing a test and instruct it precisely which test type is required based on a structured testing pyramid. Automatic test layer routing enforces boundaries across unit, integration, behavioral, adapter, and event flow layers. Tests are not treated as interchangeable. They are categorized and validated according to system role."
+      },
+      {
+        "type": "p",
+        "text": "Test Impact Analysis improves local development speed by running only the relevant subset of tests instead of the entire suite on every change. In CI, test layers are separated with an enforced coverage floor of 80 percent. A nine-check verification script produces a proof file and handshake receipt confirming that the framework is configured correctly."
+      },
+      {
+        "type": "p",
+        "text": "Testing becomes structural rather than optional."
+      },
+      {
+        "type": "p",
+        "text": "Coming Soon: Mault Pro Roadmap"
+      },
+      {
+        "type": "p",
+        "text": "The pattern continues in upcoming releases."
+      },
+      {
+        "type": "p",
+        "text": "Step 6 introduces pre-commit hook verification loops with proof-of-completion receipts. Step 7 adds structural governance with AST-level enforcement and CI sharding. Step 8 expands into observability and production monitoring configuration for AI-maintained codebases."
+      },
+      {
+        "type": "p",
+        "text": "Cross-IDE enforcement is also expanding. Runtime test gates are coming for Cursor, Windsurf, and Augment. Not just advisory rules, but actual enforcement at the moment of change."
+      },
+      {
+        "type": "p",
+        "text": "Coming Soon: Open Source Mault Core"
+      },
+      {
+        "type": "p",
+        "text": "We are open-sourcing Mault Core."
+      },
+      {
+        "type": "p",
+        "text": "Fifteen detectors. The Mault Panel. AI-ready prompts with built-in verification scripting."
+      },
+      {
+        "type": "p",
+        "text": "All free."
+      },
+      {
+        "type": "p",
+        "text": "More details will follow, but the goal is simple. Enforcement should not be gated behind access. The ecosystem benefits when structural verification becomes standard."
+      },
+      {
+        "type": "p",
+        "text": "The Pattern Behind Everything"
+      },
+      {
+        "type": "p",
+        "text": "Every step in 0.7.5 follows the same model."
+      },
+      {
+        "type": "p",
+        "text": "One prompt initiates the change. Your AI coder performs the work. A verification script checks real system state. A proof file confirms completion."
+      },
+      {
+        "type": "p",
+        "text": "This is physics, not policy."
+      },
+      {
+        "type": "p",
+        "text": "Mault 0.7.5 moves enforcement closer to runtime, closer to repository state, and closer to production certainty. As AI writes more of your software, verification must become stricter and more automated."
+      },
+      {
+        "type": "p",
+        "text": "This release makes that possible."
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "February 10, 2026"
+      }
+    ],
+    "date": "2026-02-10",
+    "image": "/assets/blog/mault-governance.webp"
+  },
+  {
+    "path": "/blog/mault-saves-you-tokens-time-and-your-codebase/",
+    "source": "/mault-saves-you-tokens-time-and-your-codebase/",
+    "title": "Mault Saves You Tokens, Time, and Your Codebase",
+    "description": "Learn more about Mault Saves You Tokens, Time, and Your Codebase.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Mault Saves You Tokens, Time, and Your Codebase"
+      },
+      {
+        "type": "h3",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "02/04/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog AI made it easy to generate code at unprecedented speed. What used to take days can now be scaffolded in minutes. Entire features, refactors, and pipelines can be created from a single prompt."
+      },
+      {
+        "type": "p",
+        "text": "But the same acceleration that makes AI powerful also makes mistakes scale faster than ever before."
+      },
+      {
+        "type": "p",
+        "text": "It is now just as easy to generate structural drift, duplicate logic, fragile pipelines, and weak testing layers at machine speed. Small issues compound quietly. Architectural boundaries erode. Dependency risks slip through unnoticed."
+      },
+      {
+        "type": "p",
+        "text": "Mault exists to solve that problem."
+      },
+      {
+        "type": "p",
+        "text": "It saves you tokens, saves you time, and keeps your codebase clean at the same time."
+      },
+      {
+        "type": "p",
+        "text": "Here is how."
+      },
+      {
+        "type": "p",
+        "text": "Fewer Tokens. Smarter Execution."
+      },
+      {
+        "type": "p",
+        "text": "AI tools are powerful, but they become expensive when they are used inefficiently. Many teams brute force complex infrastructure tasks with the largest model available, burning through tokens while retrying configuration steps that should have been verified deterministically."
+      },
+      {
+        "type": "p",
+        "text": "Mault simplifies and verifies otherwise complex tasks like CI setup, environment configuration, branch protection, and production hardening. Instead of repeatedly prompting a large model to “try again,” you can use a local model or something lightweight like Sonnet 4.5 instead of Opus 4.5 or 4.6 and still get it right the first time."
+      },
+      {
+        "type": "p",
+        "text": "Verification reduces retries. Deterministic setup reduces token waste. You save the heavy reasoning cycles for actual feature development instead of infrastructure debugging."
+      },
+      {
+        "type": "p",
+        "text": "Less trial and error leads to fewer retries. Fewer retries lead to fewer burned tokens. Over time, that difference compounds."
+      },
+      {
+        "type": "p",
+        "text": "A Lean, Quiet Codebase"
+      },
+      {
+        "type": "p",
+        "text": "Velocity without structure leads to duplication, drift, and fragile systems. AI does not get tired. It will happily generate similar logic across multiple files without recognizing long-term architectural cost."
+      },
+      {
+        "type": "p",
+        "text": "Mault enforces structure and testing discipline automatically as changes are introduced. Duplication stays under control. Boundaries remain intact. Architectural intent does not erode with each generated change."
+      },
+      {
+        "type": "p",
+        "text": "Tests are not optional suggestions. They are required and validated. When enforcement happens at the point of change rather than after a pull request, the result is a codebase that behaves predictably."
+      },
+      {
+        "type": "p",
+        "text": "Production becomes quieter. There are fewer surprise regressions. CI becomes less chaotic. Review cycles become cleaner. Instead of constantly debugging drift, teams can focus on forward progress."
+      },
+      {
+        "type": "p",
+        "text": "Enforcement Before CI"
+      },
+      {
+        "type": "p",
+        "text": "Most teams rely on CI to catch structural, security, or configuration issues. By the time something fails in CI, the change has already been written, committed, and pushed. The cost of correction has increased."
+      },
+      {
+        "type": "p",
+        "text": "Mault shifts enforcement left. Security checks and architectural rules move from CI into pre-commit and runtime. Unsafe changes are caught before they reach the pipeline. Structural violations are surfaced before they spread across branches."
+      },
+      {
+        "type": "p",
+        "text": "Some deeper validation, such as mutation testing or heavy coverage analysis, still belongs in CI. But the majority of enforcement should happen earlier, closer to the point of change."
+      },
+      {
+        "type": "p",
+        "text": "When enforcement scales with AI velocity, your AI coder stays honest. Your pipeline stays clean. Your team stays focused."
+      },
+      {
+        "type": "p",
+        "text": "Why We Built This"
+      },
+      {
+        "type": "p",
+        "text": "It took six patents and roughly 1,500 hours of focused development to build Mault."
+      },
+      {
+        "type": "p",
+        "text": "We built it because this layer did not exist."
+      },
+      {
+        "type": "p",
+        "text": "AI increased development velocity dramatically, but nothing ensured that velocity stayed production safe. The tools in place were designed for slower, human-paced workflows. They were not built for systems where large portions of code are generated automatically."
+      },
+      {
+        "type": "p",
+        "text": "So we built the enforcement layer ourselves."
+      },
+      {
+        "type": "p",
+        "text": "Mault Core is free. Mault Pro is $99."
+      },
+      {
+        "type": "p",
+        "text": "In about thirty minutes, you can move from AI-generated code to production-ready systems with automated verification in place from day one."
+      },
+      {
+        "type": "p",
+        "text": "Build with AI."
+      },
+      {
+        "type": "p",
+        "text": "Ship with standards."
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "February 4, 2026"
+      }
+    ],
+    "date": "2026-02-04",
+    "image": "/assets/blog/mault-governance.webp"
+  },
+  {
+    "path": "/blog/opus-4-6-tanked-the-market-will-it-replace-saas/",
+    "source": "/opus-4-6-tanked-the-market-will-it-replace-saas/",
+    "title": "Opus 4.6 Tanked the Market. Will It Replace SaaS?",
+    "description": "Learn more about Opus 4.6 Tanked the Market. Will It Replace SaaS?.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "Opus 4.6 Tanked the Market. Will It Replace SaaS?"
+      },
+      {
+        "type": "h3",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "02/06/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog When Anthropic’s Claude Opus 4.6 was released, the reaction was immediate. Markets wobbled. Commentators started speculating. The familiar question surfaced again: Is this the model that replaces SaaS? Does Salesforce disappear? Does HubSpot get rebuilt by internal AI teams? Do traditional engineering orgs become obsolete?"
+      },
+      {
+        "type": "p",
+        "text": "Let’s slow down."
+      },
+      {
+        "type": "p",
+        "text": "Salesforce and HubSpot have been building for decades. Their platforms are not just collections of features. They are deeply integrated ecosystems with hardened infrastructure, compliance layers, edge-case handling, and operational maturity earned over years of iteration. That is not something you replicate over a weekend with an AI agent and a clever prompt."
+      },
+      {
+        "type": "p",
+        "text": "Mid-to-large enterprises that believe they can direct their traditional engineering teams to “build their own Salesforce” using AI workflows are underestimating the complexity of the problem. Spinning up CRUD endpoints and dashboards is easy. Maintaining portability, scalability, security, compliance, and ecosystem integration over time is not."
+      },
+      {
+        "type": "p",
+        "text": "Could smaller companies build something that works? Possibly. But if you are in the business of flipping burgers, why are you trying to manufacture your own mustard? The economics and focus rarely make sense."
+      },
+      {
+        "type": "p",
+        "text": "The SaaS replacement narrative is seductive. It is also simplistic."
+      },
+      {
+        "type": "p",
+        "text": "The Real Shift: Agents as Employees"
+      },
+      {
+        "type": "p",
+        "text": "Where this does become real is not in replacing SaaS platforms outright. It becomes real in how we think about labor."
+      },
+      {
+        "type": "p",
+        "text": "As agents increasingly act like employees, the per-seat pricing model starts to feel misaligned. If half your “team” is non-human, charging per human seat becomes awkward."
+      },
+      {
+        "type": "p",
+        "text": "But that does not imply collapse. Pricing models evolve. If per-seat erodes, it becomes API usage. If not API usage, then compute consumption. If not compute, some other form of metered access. Large software companies have adapted to every pricing transition over the past two decades. They will adapt again."
+      },
+      {
+        "type": "p",
+        "text": "The deeper question is more structural. If agents meaningfully replace human labor, what happens to demand in the broader economy? What happens when fewer people are buying burgers and widgets? That conversation is real. It deserves serious thought."
+      },
+      {
+        "type": "p",
+        "text": "But that is a macroeconomic discussion."
+      },
+      {
+        "type": "p",
+        "text": "This post is about systems."
+      },
+      {
+        "type": "p",
+        "text": "So Let’s Talk About Opus 4.6"
+      },
+      {
+        "type": "p",
+        "text": "Is it better than 4.5?"
+      },
+      {
+        "type": "p",
+        "text": "Yes."
+      },
+      {
+        "type": "p",
+        "text": "Anthropic’s Claude Opus 4.6 demonstrates stronger reasoning depth, more sustained “thinking” behavior, and a one million token context window that materially changes what is possible in large codebases. For deep refactors, monorepos, and system-wide transformations, that expanded context matters."
+      },
+      {
+        "type": "p",
+        "text": "It is an impressive model."
+      },
+      {
+        "type": "p",
+        "text": "Instead of celebrating integration speed, I wanted to see how it behaves under production constraints. Not in a demo. Not in a playground. In a real repository, with real enforcement layers."
+      },
+      {
+        "type": "p",
+        "text": "Because I work in guardrails."
+      },
+      {
+        "type": "p",
+        "text": "What Actually Happened in Production"
+      },
+      {
+        "type": "p",
+        "text": "We ran Claude Opus 4.6 through a full production deployment scenario. CI pipeline configuration. Branch protection. Verification scripts. Real repository state. Real enforcement."
+      },
+      {
+        "type": "p",
+        "text": "It completed the task."
+      },
+      {
+        "type": "p",
+        "text": "It even self-corrected dependency issues involving Pydantic without being explicitly instructed to do so. That level of self-adjustment is impressive."
+      },
+      {
+        "type": "p",
+        "text": "But here is the part that rarely gets discussed."
+      },
+      {
+        "type": "p",
+        "text": "It still needs guardrails."
+      },
+      {
+        "type": "p",
+        "text": "Below is a small sample of issues surfaced during that run. This represents perhaps ten percent of what enforcement detected."
+      },
+      {
+        "type": "p",
+        "text": "A critical security issue emerged from environment logic inversion. The system failed to properly flag real secret .env commits, creating high risk of credential leakage. The model appeared confident in its handling of secrets. The logic did not hold under verification."
+      },
+      {
+        "type": "p",
+        "text": "Portability issues surfaced when the model defaulted to grep -oP, relying on Perl-compatible regular expressions. That flag works on GNU systems but fails immediately on macOS and BSD. Cross-platform compatibility lives in small details. Production systems break at those boundaries."
+      },
+      {
+        "type": "p",
+        "text": "From a developer experience standpoint, the model attempted to be cautious by escaping every dollar sign in build scripts. While technically defensible, the result was functionally disruptive and required correction."
+      },
+      {
+        "type": "p",
+        "text": "In another instance, it hard-coded “Main” as a branch name. Despite earlier logic dynamically detecting branch names, the final implementation assumed a specific convention and broke in a repository using master. Models replicate patterns. Patterns are not guarantees."
+      },
+      {
+        "type": "p",
+        "text": "There were also performance inefficiencies, including spinning up multiple separate Python processes to parse the same JSON response. The implementation functioned. It was not efficient."
+      },
+      {
+        "type": "p",
+        "text": "None of these examples mean Opus 4.6 is flawed."
+      },
+      {
+        "type": "p",
+        "text": "They illustrate something more fundamental."
+      },
+      {
+        "type": "p",
+        "text": "The Real Conversation"
+      },
+      {
+        "type": "p",
+        "text": "Claude Opus 4.6 is arguably the strongest coding model available today. But “best available” and “requires no enforcement” are two entirely different claims."
+      },
+      {
+        "type": "p",
+        "text": "You cannot evaluate a model in isolation. You must evaluate the system it operates within."
+      },
+      {
+        "type": "p",
+        "text": "Consider the variables. How precise are the human instructions? How healthy is the codebase? Is it a clean monorepo or a legacy system with implicit assumptions? What operating systems are involved? How diverse is the API surface? Where do edge cases exist? Does a large context window translate into true understanding of architectural intent?"
+      },
+      {
+        "type": "p",
+        "text": "Production failures rarely occur along the happy path. They occur at the edges, under unusual combinations of state and constraint."
+      },
+      {
+        "type": "p",
+        "text": "Models optimize for pattern completion. Production systems require constraint enforcement."
+      },
+      {
+        "type": "p",
+        "text": "AI Is Improving. Enforcement Still Matters."
+      },
+      {
+        "type": "p",
+        "text": "The idea that models are now “good enough” to eliminate guardrails is attractive. These systems are powerful and improving rapidly. But they are not self-verifying systems."
+      },
+      {
+        "type": "p",
+        "text": "Larger context windows do not eliminate architectural drift. Longer reasoning cycles do not guarantee portability. Self-correction does not replace deterministic validation."
+      },
+      {
+        "type": "p",
+        "text": "As models become more capable, the surface area of risk increases alongside them. Teams trust them more. Changes move faster. Human review bandwidth does not scale proportionally."
+      },
+      {
+        "type": "p",
+        "text": "If generation accelerates and enforcement does not, drift accelerates."
+      },
+      {
+        "type": "p",
+        "text": "This is not fear. It is mechanics."
+      },
+      {
+        "type": "p",
+        "text": "If AI is writing a meaningful portion of your software, something must verify what it writes. Not as policy. Not as suggestion. As enforceable system constraints."
+      },
+      {
+        "type": "p",
+        "text": "That is not a critique of AI."
+      },
+      {
+        "type": "p",
+        "text": "It is recognition that production reliability depends on verification."
+      },
+      {
+        "type": "p",
+        "text": "That is physics."
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "February 6, 2026"
+      }
+    ],
+    "date": "2026-02-06",
+    "image": "/assets/blog/mault-governance.webp"
+  },
+  {
+    "path": "/blog/the-model-is-not-the-system/",
+    "source": "/the-model-is-not-the-system/",
+    "title": "The Model Is Not the System",
+    "description": "Learn more about The Model Is Not the System.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "The Model Is Not the System"
+      },
+      {
+        "type": "h3",
+        "text": "Kimberley Modeste (CEO)"
+      },
+      {
+        "type": "p",
+        "text": "02/06/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog Anthropic’s Claude Opus 4.6 and the latest GPT-4 models are materially better than their predecessors. They reason longer. They maintain deeper context. They self-correct more effectively. On isolated coding tasks, they perform at a level that would have seemed unrealistic just a few years ago."
+      },
+      {
+        "type": "p",
+        "text": "But there is a subtle mistake in how many teams evaluate them."
+      },
+      {
+        "type": "p",
+        "text": "They evaluate the model. Production software is not a model. It is a system."
+      },
+      {
+        "type": "p",
+        "text": "A coding model is typically judged by whether it completes a task, produces logically coherent output, and compiles successfully. Production systems are judged by entirely different criteria. They must behave deterministically across environments. They must remain portable across platforms. They must preserve architectural boundaries. They must handle edge cases. They must remain secure under unexpected inputs. They must scale without silent drift."
+      },
+      {
+        "type": "p",
+        "text": "Those are system properties, not prompt properties."
+      },
+      {
+        "type": "p",
+        "text": "A model can generate syntactically correct code that passes immediate tests while still introducing subtle risk. It may rely on a non-portable flag that fails on macOS. It may hard-code assumptions about branch naming. It may introduce a dependency upgrade that appears safe but alters behavior under load. It may satisfy the happy path while weakening structural constraints over time."
+      },
+      {
+        "type": "p",
+        "text": "None of that means the model failed. It means the system was not enforced."
+      },
+      {
+        "type": "p",
+        "text": "There is also confusion around context windows. A larger context window allows a model to see more files at once, which improves coherence in larger codebases. But visibility is not the same as understanding intent. A model may see architectural patterns without understanding why certain boundaries must hold. It may replicate conventions without recognizing which ones are critical invariants. Production reliability depends on constraints, and constraints must be enforced explicitly."
+      },
+      {
+        "type": "p",
+        "text": "Self-correction is another area that gets overstated. Modern models can revise their output when prompted or when errors surface. That is meaningful progress. But self-correction remains probabilistic. It is a retry mechanism. Verification, by contrast, is deterministic. A verification system checks whether tests exist, whether branch rules are respected, whether dependencies resolve safely, and whether structural boundaries hold under defined conditions."
+      },
+      {
+        "type": "p",
+        "text": "Retrying increases confidence. Verification increases reliability."
+      },
+      {
+        "type": "p",
+        "text": "As models improve, another dynamic emerges: trust inflation. When output quality rises, skepticism naturally declines. Developers review less aggressively. Teams assume fewer edge cases. Changes move faster through pipelines. Meanwhile, human review capacity does not scale proportionally. If generation speed increases while inspection capacity remains constant, inspection depth per change decreases. That is arithmetic, not opinion."
+      },
+      {
+        "type": "p",
+        "text": "Without enforcement that scales with generation velocity, structural drift becomes more likely over time."
+      },
+      {
+        "type": "p",
+        "text": "This is not an argument against AI. It is an argument for systems thinking. AI increases throughput. Throughput without constraints increases entropy. In complex systems, entropy accumulates quietly before it surfaces visibly. Production incidents are rarely caused by one dramatic mistake. They are usually the result of small, compounding assumptions that were never verified."
+      },
+      {
+        "type": "p",
+        "text": "The real question is not whether Claude Opus 4.6 or GPT-4 is “good enough.”"
+      },
+      {
+        "type": "p",
+        "text": "The real question is whether the system in which they operate is verified."
+      },
+      {
+        "type": "p",
+        "text": "Models generate."
+      },
+      {
+        "type": "p",
+        "text": "Systems enforce."
+      },
+      {
+        "type": "p",
+        "text": "Teams that separate those responsibilities will build faster and more safely. Teams that merge them will eventually discover that confidence is not the same as correctness."
+      },
+      {
+        "type": "p",
+        "text": "The model is not the system."
+      },
+      {
+        "type": "p",
+        "text": "Production reliability depends on understanding that difference."
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "February 6, 2026"
+      }
+    ],
+    "date": "2026-02-06",
+    "image": "/assets/blog/mault-governance.webp"
+  },
+  {
+    "path": "/blog/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/",
+    "source": "/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/",
+    "title": "The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook",
+    "description": "Learn more about The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "The Enterprise Pipeline That Doesn't Let AI Off the Hook"
+      },
+      {
+        "type": "h3",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "04/01/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog Enterprises are not asking how to go faster with AI. They are asking how to stay in control when they do. And right behind that: how do we make sure we understand what AI built?"
+      },
+      {
+        "type": "p",
+        "text": "Those are the questions Mault was built to answer."
+      },
+      {
+        "type": "p",
+        "text": "Sneak preview: our new enterprise console standardizes the entire multi-agent development workflow inside a governed pipeline. Agents do not step on each other. Every role is defined. Every handshake is logged. Every decision leaves a receipt. Admin controls give engineering leadership centralized configuration of hooks, prompts, and governance rules with periodic health checks on brownfield projects."
+      },
+      {
+        "type": "p",
+        "text": "Two new features coming soon."
+      },
+      {
+        "type": "p",
+        "text": "While you are running last mile testing on your current sprint, the Spec Agent is already hardening the next one."
+      },
+      {
+        "type": "p",
+        "text": "Step 0: Spec Agent. The outcome is bad ideas are killed before they become bad code."
+      },
+      {
+        "type": "p",
+        "text": "Composer → Gauntlet 1 → Gauntlet 2 → Convergence"
+      },
+      {
+        "type": "p",
+        "text": "Planner receives only hardened, phased specs with explicit acceptance criteria, architectural plans, and start/stop boundaries."
+      },
+      {
+        "type": "p",
+        "text": "Step 5: Tester Agent Answers the question: does the shipped code actually work when a real user touches it?"
+      },
+      {
+        "type": "p",
+        "text": "Artifact → Interaction → State → Journey → Human Judgment"
+      },
+      {
+        "type": "p",
+        "text": "A five-layer pyramid where nothing runs until the layer beneath it passes. Enterprise preflight, governance regression, TTL audit, and a 10-pattern bug taxonomy built from 174 fix PRs. Delivers a structured quality report with classified findings routed directly to the Orchestrator."
+      },
+      {
+        "type": "p",
+        "text": "95% of the process is machine verified. The last layer is humans making sure it works for other humans."
+      },
+      {
+        "type": "p",
+        "text": "What about institutional knowledge? enforced logging is table stakes with mault. We leave breadcrumbs every step of the way. What is genuinely underappreciated:"
+      },
+      {
+        "type": "p",
+        "text": "Most teams know tests are documentation in theory. Few have a pipeline that enforces it. In Mault's governed flow, mutation testing proves your tests actually detect defects. Coverage without mutation testing is a false sense of security."
+      },
+      {
+        "type": "p",
+        "text": "Together, under enforcement, they produce the only artifact in your codebase that is structurally required to stay true. It does not go stale. It does not live in a Confluence page nobody reads. It travels with the codebase forever. Every workflow logged. Every decision receipted. The historical record is preserved automatically as the agents work."
+      },
+      {
+        "type": "p",
+        "text": "Your agents build it. Mault makes sure you own it."
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "April 1, 2026"
+      }
+    ],
+    "date": "2026-04-01",
+    "image": "/assets/blog/enterprise-pipeline.webp"
+  },
+  {
+    "path": "/blog/the-triage-report-ai-vendors-dont-want-you-to-see/",
+    "source": "/the-triage-report-ai-vendors-dont-want-you-to-see/",
+    "title": "The Triage Report AI Vendors Don&#039;t Want You to See",
+    "description": "Learn more about The Triage Report AI Vendors Don&#039;t Want You to See.",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "The Triage Report AI Vendors Don't Want You to See"
+      },
+      {
+        "type": "h3",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "03/28/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog If you think AI is ready to one-shot complex systems, you’re wrong. Unless, of course, you think wrapping a Todo list in FastAPI and calling it an “Asynchronous Event-Driven Agent” counts as production engineering."
+      },
+      {
+        "type": "p",
+        "text": "Take a look at this triage report. Ready for this?"
+      },
+      {
+        "type": "p",
+        "text": "Even after the most sophisticated AI coder in the world took a stab at this atomic task, and after nearly 90 deterministic checks across runtime, pre-commit, and CI… our Bot Triage (copilot is a little grump today) still flagged 9 findings on the diff."
+      },
+      {
+        "type": "p",
+        "text": "The Good, the Bad, and the Ugly."
+      },
+      {
+        "type": "p",
+        "text": "The Ugly That’s how we opened this post. The false sense of security masked in “revolutionary” vernacular."
+      },
+      {
+        "type": "p",
+        "text": "The Bad I have a few nits in here that could have been picked up with more aggressive pre-commit hooks. We’ll tune the rails and move on."
+      },
+      {
+        "type": "p",
+        "text": "The Good 6 of those 9 findings were pure logic nits. We’re talking about zone-boundary violations, non-worker role enforcement, and missing ownership guards."
+      },
+      {
+        "type": "p",
+        "text": "KEY POINT: These are architectural gaps that cannot be “shifted left.” You can't lint for a logic mismatch against acceptance criteria that only exists in the context of the feature's intent."
+      },
+      {
+        "type": "p",
+        "text": "The Result In a standard workflow where your developers use AI under this kind of governance, the “grunt work” is gone. As the human reviewer, you aren't wasting cycles on type errors or variable shadowing. You are focused on Senior-level architectural integrity."
+      },
+      {
+        "type": "p",
+        "text": "Our system ships 30+ PRs per day because not because we “one-shot.” Rather we trust highly tuned guardrails. Our governance rails are available for you to leverage, and yes, it supports true multi-agent orchestration …. not the “weekend warrior” version."
+      },
+      {
+        "type": "h3",
+        "text": "Bot finding triage — 9 findings (5 HIGH, 2 MEDIUM, 2 LOW)"
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "March 28, 2026"
+      }
+    ],
+    "date": "2026-03-28",
+    "image": "/assets/blog/mault-governance.webp"
+  },
+  {
+    "path": "/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/",
+    "source": "/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/",
+    "title": "We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened.",
+    "description": "Learn more about We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened..",
+    "blocks": [
+      {
+        "type": "h2",
+        "text": "We Tested Multi-Agent Orchestration on Two Different Machines. Here's What Happened."
+      },
+      {
+        "type": "h3",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "p",
+        "text": "03/16/2026"
+      },
+      {
+        "type": "p",
+        "text": "Back to Blog For those getting into AI workloads, hardware matters more than you think. I spent yesterday testing multi-agent orchestration on a baseline system versus a mid-tier workstation to see how they handle concurrent reasoning. The baseline system hit a ceiling quickly…. it was slow, error-prone, and couldn't handle more than two agents at once without stuttering."
+      },
+      {
+        "type": "p",
+        "text": "The issue isn't just speed, it's also logic. The bot review board was littered with logic issues (on top of 80+ deterministic checks from run-time, through CI, I also run a couple of bots to catch logic nits). I noticed the difference, first-hand but research also supports when your system lacks thread density or hits the SSD swap file, the resulting latency causes agents to “time out” and assume incorrect states. This could very well be the primary driver for hallucinations in autonomous flows."
+      },
+      {
+        "type": "p",
+        "text": "If you're curious, I am currently running two different baselines for testing and two mid-tier workstations for orchestration. I can’t justify a pro workstation yet, but the mid-tier setups give me the flexibility to adapt later for heavier local workflows or tuning."
+      },
+      {
+        "type": "h2",
+        "text": "James Carso (CTO)"
+      },
+      {
+        "type": "h2",
+        "text": "March 16, 2026"
+      }
+    ],
+    "date": "2026-03-16",
+    "image": "/assets/blog/multi-agent-orchestration.webp"
+  }
+]

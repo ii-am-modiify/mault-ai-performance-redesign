@@ -1,0 +1,4 @@
+Independent performance redesign demo by Tech Adventures.
+Not affiliated with or endorsed by Mault.
+Built with Astro, semantic HTML, CSS, and minimal JavaScript.
+
