@@ -35,4 +35,10 @@ for (const route of routeMap.routes) {
 }
 await mkdir(path.resolve('src/data'), { recursive: true });
 await writeFile(path.resolve('src/data/migrated-pages.json'), JSON.stringify(pages, null, 2));
+await mkdir(path.resolve('public'), { recursive: true });
+const publicRoutes = ['/', ...pages.map((page) => page.path)];
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${publicRoutes.map((route) => `  <url><loc>https://mault.ai${route}</loc></url>`).join('\n')}\n</urlset>\n`;
+await writeFile(path.resolve('public/sitemap.xml'), sitemap);
+const llmsFull = ['# Mault public site', '', 'Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.', '', ...pages.map((page) => `## ${page.title}\n\nProduction URL: https://mault.ai${page.path}\n\n${page.description}`)].join('\n\n');
+await writeFile(path.resolve('public/llms-full.txt'), `${llmsFull}\n`);
 console.log(`Generated ${pages.length} migrated routes from ${latest}`);

@@ -22,8 +22,9 @@ const nav = [
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta name="theme-color" content="#070907" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%23070907%22/><path d=%22M15 46V18h8l9 14 9-14h8v28h-8V30l-9 13-9-13v16z%22 fill=%22%23a8ff3e%22/></svg>" />
     <title>{title}</title>
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
       '@context': 'https://schema.org', '@type': 'Organization', name: 'Mault', url: 'https://mault.ai',
       sameAs: ['https://linkedin.com/company/mault/', 'https://x.com/maultai', 'https://instagram.com/mault_ai/'],
     })} />
@@ -32,7 +33,7 @@ const nav = [
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header" data-header>
       <div class="shell nav-wrap">
-        <a class="brand" href="/" aria-label="Mault home"><span class="brand-mark">M</span><span>mault</span></a>
+        <a class="brand" href="/"><span class="brand-mark">M</span><span>mault</span></a>
         <nav class="desktop-nav" aria-label="Primary">
           {nav.map(([href, label]) => <a href={href}>{label}</a>)}
         </nav>

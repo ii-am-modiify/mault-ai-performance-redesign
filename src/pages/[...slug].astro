@@ -11,7 +11,7 @@ export function getStaticPaths() {
 const { page } = Astro.props;
 const isBlogIndex = page.path === '/blog/';
 const articles = pages.filter((item) => item.path.startsWith('/blog/') && item.path !== '/blog/');
-const normalizeType = (type) => type === 'h1' ? 'h2' : type;
+const normalizeType = (type: string) => type === 'h1' ? 'h2' : type;
 ---
 <SiteLayout title={`${page.title} | Mault`} description={page.description} canonical={page.path}>
   <header class="page-hero"><div class="shell"><p class="eyebrow">Mault</p><h1>{page.title}</h1><p class="lede">{page.description}</p></div></header>
