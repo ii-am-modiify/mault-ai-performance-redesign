@@ -15,10 +15,30 @@ const articleMeta = {
   '/blog/the-triage-report-ai-vendors-dont-want-you-to-see/': { date: '2026-03-28', image: '/assets/blog/mault-governance.webp' },
   '/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/': { date: '2026-03-16', image: '/assets/blog/multi-agent-orchestration.webp' },
 };
-const decode = (s='') => s.replace(/<script[\s\S]*?<\/script>/gi,' ').replace(/<style[\s\S]*?<\/style>/gi,' ')
-  .replace(/<[^>]+>/g,' ').replaceAll('&nbsp;',' ').replaceAll('&amp;','&').replaceAll('&#038;','&')
-  .replaceAll('&#8217;',"'").replaceAll('&#8211;','–').replaceAll('&#039;',"'").replaceAll('&quot;','"')
-  .replace(/&#(\d+);/g, (_, code) => String.fromCodePoint(Number(code))).replace(/\s+/g,' ').trim();
+const entities = { nbsp: ' ', amp: '&', '#038': '&', '#8217': "'", '#8211': '–', '#039': "'", quot: '"' };
+const withoutBlock = (value, tag) => {
+  let output = ''; let cursor = 0; const lower = value.toLowerCase(); const opener = `<${tag}`; const closer = `</${tag}>`;
+  while (cursor < value.length) {
+    const start = lower.indexOf(opener, cursor);
+    if (start < 0) { output += value.slice(cursor); break; }
+    output += value.slice(cursor, start);
+    const end = lower.indexOf(closer, start + opener.length);
+    cursor = end < 0 ? value.length : end + closer.length;
+  }
+  return output;
+};
+const withoutTags = (value) => {
+  let output = ''; let insideTag = false;
+  for (const character of value) {
+    if (character === '<') insideTag = true;
+    else if (character === '>') { insideTag = false; output += ' '; }
+    else if (!insideTag) output += character;
+  }
+  return output;
+};
+const decode = (value = '') => withoutTags(withoutBlock(withoutBlock(value, 'script'), 'style'))
+  .replace(/&(nbsp|amp|quot|#\d+);/g, (_match, key) => entities[key] || String.fromCodePoint(Number(key.slice(1))))
+  .replace(/\s+/g, ' ').trim();
 const cleanTitle = (title='') => title.replace(/\s*[|–-]\s*Mault.*$/i,'').trim();
 const pick = (source) => manifest.records.find((record) => new URL(record.url).pathname === source);
 const pages = [];
