@@ -1,0 +1,30 @@
+/* Site-wide readability floor for supporting copy and technical UI labels. */
+.eyebrow,.status,.card-index,.footer-grid h2,.article-meta,.proof-note{font-size:13px!important}
+.terminal,.flow-row,.agent-tile strong,.metric span{font-size:14px!important}
+.flow-row small,.flow-inspector span,.terminal-replay{font-size:12px!important}
+.flow-inspector p,.agent-intro>p{font-size:15px!important}
+.footer-grid a:not(.brand),.footer-bottom{font-size:14px!important}
+.footer-grid p,.card p,.blog-card p,.price-card li,.faq-list p{font-size:16px!important}
+
+.pilot-proof span,.pilot-timeline article>span,.pilot-summary small,.pilot-agents span,.form-status{font-size:14px!important}
+.pilot-summary li,.pilot-contact-note span,.pilot-form label{font-size:15px!important}
+
+.mp-card>span,.mp-table th{font-size:12px!important}
+.mp-form label,.mp-form-status,.mp-doc-nav a,.mp-step:before{font-size:14px!important}
+.mp-form input,.mp-form textarea,.mp-form select,.mp-table td{font-size:16px!important}
+.mp-card p,.mp-panel li,.mp-faq p,.mp-doc p,.mp-doc li,.mp-step p{font-size:16px!important;line-height:1.65}
+.mp-doc pre{font-size:14px!important}
+
+.mault-bot-launch strong{font-size:14px!important}
+.mault-bot-launch small,.mault-bot-panel>header small{font-size:11px!important}
+.bot-message p{font-size:15px!important}
+.bot-message>span,.bot-message a,.mault-bot-prompts button{font-size:11px!important}
+.bot-message pre{font-size:12px!important}
+.mault-bot-form input{font-size:15px!important}
+.mault-bot-panel>footer{font-size:10px!important}
+
+.hiw-console .terminal-bar span,.hiw-stage-list button small,.hiw-compare article>span,.hiw-controls article>span,.hiw-inspector>div span,.hiw-inspector>div code,.hiw-sim-actions button,.hiw-result>span{font-size:12px!important}
+.hiw-console>code,.hiw-stage-list button>span,.hiw-result code{font-size:14px!important}
+.hiw-controls p,.hiw-result p{font-size:15px!important;line-height:1.6}
+
+@media(max-width:600px){.terminal{font-size:13px!important}.footer-bottom{font-size:13px!important}}
