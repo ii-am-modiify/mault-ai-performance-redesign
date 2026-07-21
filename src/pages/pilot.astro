@@ -21,6 +21,23 @@ const agents = ['Claude Code','Cursor','GitHub Copilot','Windsurf','OpenAI Codex
     <section class="pilot-apply" id="apply"><div class="shell pilot-apply-grid"><div><p class="eyebrow">Request a pilot</p><h2>Tell us where governance needs to hold.</h2><p>This independent demo records submissions locally and does not contact Mault or send production email.</p><div class="pilot-contact-note"><strong>What happens next</strong><span>Architecture review · scope confirmation · installation plan</span></div></div>
       <form class="pilot-form" data-pilot-form><div class="form-row"><label>First name<input name="firstName" autocomplete="given-name" required /></label><label>Last name<input name="lastName" autocomplete="family-name" required /></label></div><label>Work email<input name="email" type="email" autocomplete="email" required /></label><label>Company<input name="company" autocomplete="organization" required /></label><label>Team size<select name="teamSize" required><option value="">Select team size</option><option>2–10</option><option>11–50</option><option>51–200</option><option>200+</option></select></label><label>Primary coding agent<select name="agent" required><option value="">Select an agent</option>{agents.map(agent=><option>{agent}</option>)}<option>Not using agents yet</option></select></label><label>What needs governance?<textarea name="goal" rows="4" placeholder="Protected paths, review bottlenecks, compliance requirements…" required></textarea></label><button class="button" type="submit">Request demo pilot</button><p class="form-status" data-pilot-status aria-live="polite"></p></form>
     </div></section>
+    <section class="section pilot-outcomes"><div class="shell">
+      <div class="section-head"><div><p class="eyebrow">At day 45</p><h2>Leave with evidence, not another experiment.</h2></div><p>Every pilot closes with a practical decision package your engineering, security, and leadership teams can use.</p></div>
+      <div class="pilot-deliverables">
+        <article data-reveal><span>01</span><h3>Governance baseline</h3><p>A mapped view of agent activity, protected paths, policy coverage, and the review gaps creating risk.</p></article>
+        <article data-reveal><span>02</span><h3>Verified evidence pack</h3><p>Attribution, decisions, violations, and sealed action records from the workflow evaluated during the pilot.</p></article>
+        <article data-reveal><span>03</span><h3>Rollout recommendation</h3><p>A clear go, adjust, or stop decision with production controls, ownership, and next-stage implementation scope.</p></article>
+      </div>
+    </div></section>
+    <section class="section pilot-faq"><div class="shell pilot-faq-grid">
+      <div><p class="eyebrow">Pilot questions</p><h2>Built to prove value without creating exposure.</h2></div>
+      <div class="faq-list">
+        <details><summary>Does source code leave our environment?</summary><p>No. The pilot is designed for local or air-gapped execution, with governance evidence captured without uploading your repositories.</p></details>
+        <details><summary>What is required from our team?</summary><p>One technical owner, up to five participating developers, a defined agent workflow, and a short weekly implementation review.</p></details>
+        <details><summary>What happens after day 45?</summary><p>You receive the evidence pack and rollout recommendation. The fixed pilot fee is credited toward an approved production rollout.</p></details>
+      </div>
+    </div></section>
+    <section class="pilot-final"><div class="shell pilot-final-card" data-reveal><div><p class="eyebrow">Ready when your workflow is</p><h2>Govern the next agent action.</h2><p>Start narrow, measure the real workflow, and make the production decision from evidence.</p></div><a class="button" href="#apply">Request the 45-day pilot</a></div></section>
   </main>
   <script>
     const form = document.querySelector('[data-pilot-form]');
