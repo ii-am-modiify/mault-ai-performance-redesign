@@ -168,6 +168,23 @@ const nav = [
         }), { threshold: .2 });
         agentObserver.observe(agentSection);
       }
+
+      const flowFeatures = document.querySelectorAll('[data-flow-feature]');
+      const flowObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-flow-visible');
+        flowObserver.unobserve(entry.target);
+      }), { threshold: .35 });
+      flowFeatures.forEach((feature) => flowObserver.observe(feature));
+      document.querySelectorAll('[data-flow-row]').forEach((row) => row.addEventListener('click', () => {
+        const flow = row.closest('[data-flow]');
+        flow?.querySelectorAll('[data-flow-row]').forEach((item) => {
+          item.classList.remove('is-selected');
+          item.setAttribute('aria-pressed', 'false');
+        });
+        row.classList.add('is-selected');
+        row.setAttribute('aria-pressed', 'true');
+      }));
     </script>
   </body>
 </html>
