@@ -35,12 +35,23 @@ for (const route of routeMap.routes) {
   const seen = new Set();
   const uniqueBlocks = blocks.filter((block) => { const key=block.type+block.text; if(seen.has(key)) return false; seen.add(key); return true; });
   const h1 = uniqueBlocks.find((block) => block.type === 'h1')?.text;
+  const title = decode(cleanTitle(h1 || record.title || route.target.split('/').filter(Boolean).at(-1)));
+  const contentBlocks = uniqueBlocks
+    .map((block) => ({ ...block, text: block.text.replace(/^Back to Blog\s*/i, '') }))
+    .filter((block) => block.text && block.text !== h1 && decode(block.text) !== title)
+    .filter((block) => !/^(James Carso \(CTO\)|\d{2}\/\d{2}\/\d{4}|[A-Z][a-z]+ \d{1,2}, \d{4})$/i.test(block.text))
+    .slice(0, 160);
+  const capturedDescription = decode(record.description || '');
+  const firstParagraph = contentBlocks.find((block) => block.type === 'p')?.text || '';
+  const description = capturedDescription && !/^Learn more about/i.test(capturedDescription)
+    ? capturedDescription
+    : `${firstParagraph.slice(0, 175).replace(/\s+\S*$/, '')}${firstParagraph.length > 175 ? '…' : ''}`;
   pages.push({
     path: route.target,
     source: route.source,
-    title: cleanTitle(h1 || record.title || route.target.split('/').filter(Boolean).at(-1)),
-    description: record.description || `Learn more about ${cleanTitle(h1 || record.title || 'Mault')}.`,
-    blocks: uniqueBlocks.filter((block) => block.text !== h1).slice(0, 160),
+    title,
+    description: description || `Learn more about ${title}.`,
+    blocks: contentBlocks,
     ...articleMeta[route.target],
   });
 }

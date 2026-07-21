@@ -20,7 +20,7 @@ Learn more about Product.
 
 Canonical route: https://mault.ai/how-it-works/
 
-Learn more about How it Works.
+Your standards ship. Not suggestions. Enforcement runs at every stage — while the agent works, before the file is saved, at commit, and before it can ship to production. Bad…
 
 ## Mault Plans
 
@@ -56,7 +56,7 @@ Get answers to common questions about Mault — installation, capabilities, comp
 
 Canonical route: https://mault.ai/blog/
 
-Learn more about The Enterprise Pipeline That Doesn't Let AI Off the Hook.
+Read More James Carso
 
 ## Ai Coder Guide
 
@@ -98,46 +98,46 @@ Learn more about Refund & Billing Policy.
 
 Canonical route: https://mault.ai/careers/
 
-Learn more about Hiring.
+Bonus: Enable thinking / extended
 
 ## Mault 0.7.5 Is Live
 
 Canonical route: https://mault.ai/blog/mault-0-7-5-is-live/
 
-Learn more about Mault 0.7.5 Is Live.
+Claude Runtime Hooks, Enforceable TDD, Modified Ralph Loops, and More This release is about one thing.
 
 ## Mault Saves You Tokens, Time, and Your Codebase
 
 Canonical route: https://mault.ai/blog/mault-saves-you-tokens-time-and-your-codebase/
 
-Learn more about Mault Saves You Tokens, Time, and Your Codebase.
+AI made it easy to generate code at unprecedented speed. What used to take days can now be scaffolded in minutes. Entire features, refactors, and pipelines can be created…
 
 ## Opus 4.6 Tanked the Market. Will It Replace SaaS?
 
 Canonical route: https://mault.ai/blog/opus-4-6-tanked-the-market-will-it-replace-saas/
 
-Learn more about Opus 4.6 Tanked the Market. Will It Replace SaaS?.
+When Anthropic’s Claude Opus 4.6 was released, the reaction was immediate. Markets wobbled. Commentators started speculating. The familiar question surfaced again: Is this…
 
 ## The Model Is Not the System
 
 Canonical route: https://mault.ai/blog/the-model-is-not-the-system/
 
-Learn more about The Model Is Not the System.
+Anthropic’s Claude Opus 4.6 and the latest GPT-4 models are materially better than their predecessors. They reason longer. They maintain deeper context. They self-correct…
 
-## The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook
+## The Enterprise Pipeline That Doesn't Let AI Off the Hook
 
 Canonical route: https://mault.ai/blog/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/
 
-Learn more about The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook.
+Enterprises are not asking how to go faster with AI. They are asking how to stay in control when they do. And right behind that: how do we make sure we understand what AI…
 
-## The Triage Report AI Vendors Don&#039;t Want You to See
+## The Triage Report AI Vendors Don't Want You to See
 
 Canonical route: https://mault.ai/blog/the-triage-report-ai-vendors-dont-want-you-to-see/
 
-Learn more about The Triage Report AI Vendors Don&#039;t Want You to See.
+If you think AI is ready to one-shot complex systems, you’re wrong. Unless, of course, you think wrapping a Todo list in FastAPI and calling it an “Asynchronous Event-Driven…
 
-## We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened.
+## We Tested Multi-Agent Orchestration on Two Different Machines. Here's What Happened.
 
 Canonical route: https://mault.ai/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/
 
-Learn more about We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened..
+For those getting into AI workloads, hardware matters more than you think. I spent yesterday testing multi-agent orchestration on a baseline system versus a mid-tier…

@@ -4,18 +4,13 @@
     "source": "/product/",
     "title": "Product",
     "description": "Learn more about Product.",
-    "blocks": [
-      {
-        "type": "h2",
-        "text": "Product"
-      }
-    ]
+    "blocks": []
   },
   {
     "path": "/how-it-works/",
     "source": "/how-it-works/",
     "title": "How it Works",
-    "description": "Learn more about How it Works.",
+    "description": "Your standards ship. Not suggestions. Enforcement runs at every stage — while the agent works, before the file is saved, at commit, and before it can ship to production. Bad…",
     "blocks": [
       {
         "type": "h2",
@@ -479,7 +474,7 @@
     "path": "/blog/",
     "source": "/blog/",
     "title": "The Enterprise Pipeline That Doesn't Let AI Off the Hook",
-    "description": "Learn more about The Enterprise Pipeline That Doesn't Let AI Off the Hook.",
+    "description": "Read More James Carso",
     "blocks": [
       {
         "type": "h2",
@@ -487,43 +482,19 @@
       },
       {
         "type": "p",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "p",
-        "text": "April 1, 2026"
-      },
-      {
-        "type": "p",
         "text": "Read More James Carso (CTO)"
-      },
-      {
-        "type": "p",
-        "text": "March 28, 2026"
       },
       {
         "type": "h1",
         "text": "The Triage Report AI Vendors Don't Want You to See"
       },
       {
-        "type": "p",
-        "text": "March 16, 2026"
-      },
-      {
         "type": "h1",
         "text": "We Tested Multi-Agent Orchestration on Two Different Machines. Here's What Happened."
       },
       {
-        "type": "p",
-        "text": "February 10, 2026"
-      },
-      {
         "type": "h1",
         "text": "Mault 0.7.5 Is Live"
-      },
-      {
-        "type": "p",
-        "text": "February 6, 2026"
       },
       {
         "type": "h1",
@@ -573,10 +544,6 @@
     "title": "Privacy Policy",
     "description": "Learn more about Privacy Policy.",
     "blocks": [
-      {
-        "type": "h2",
-        "text": "Privacy Policy"
-      },
       {
         "type": "h2",
         "text": "Last Updated: December 2025"
@@ -887,10 +854,6 @@
     "blocks": [
       {
         "type": "h2",
-        "text": "Cookie Policy"
-      },
-      {
-        "type": "h2",
         "text": "Last Updated: December 2025"
       },
       {
@@ -921,10 +884,6 @@
     "title": "Refund & Billing Policy",
     "description": "Learn more about Refund & Billing Policy.",
     "blocks": [
-      {
-        "type": "h2",
-        "text": "Refund & Billing Policy"
-      },
       {
         "type": "h2",
         "text": "Last Updated: December 2025"
@@ -995,7 +954,7 @@
     "path": "/careers/",
     "source": "/hiring/",
     "title": "Hiring",
-    "description": "Learn more about Hiring.",
+    "description": "Bonus: Enable thinking / extended",
     "blocks": [
       {
         "type": "li",
@@ -1123,23 +1082,11 @@
     "path": "/blog/mault-0-7-5-is-live/",
     "source": "/mault-0-7-5-is-live/",
     "title": "Mault 0.7.5 Is Live",
-    "description": "Learn more about Mault 0.7.5 Is Live.",
+    "description": "Claude Runtime Hooks, Enforceable TDD, Modified Ralph Loops, and More This release is about one thing.",
     "blocks": [
       {
-        "type": "h2",
-        "text": "Mault 0.7.5 Is Live"
-      },
-      {
-        "type": "h3",
-        "text": "James Carso (CTO)"
-      },
-      {
         "type": "p",
-        "text": "02/10/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog Claude Runtime Hooks, Enforceable TDD, Modified Ralph Loops, and More This release is about one thing. Enforcement."
+        "text": "Claude Runtime Hooks, Enforceable TDD, Modified Ralph Loops, and More This release is about one thing. Enforcement."
       },
       {
         "type": "p",
@@ -1292,14 +1239,6 @@
       {
         "type": "p",
         "text": "This release makes that possible."
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "February 10, 2026"
       }
     ],
     "date": "2026-02-10",
@@ -1309,23 +1248,11 @@
     "path": "/blog/mault-saves-you-tokens-time-and-your-codebase/",
     "source": "/mault-saves-you-tokens-time-and-your-codebase/",
     "title": "Mault Saves You Tokens, Time, and Your Codebase",
-    "description": "Learn more about Mault Saves You Tokens, Time, and Your Codebase.",
+    "description": "AI made it easy to generate code at unprecedented speed. What used to take days can now be scaffolded in minutes. Entire features, refactors, and pipelines can be created…",
     "blocks": [
       {
-        "type": "h2",
-        "text": "Mault Saves You Tokens, Time, and Your Codebase"
-      },
-      {
-        "type": "h3",
-        "text": "James Carso (CTO)"
-      },
-      {
         "type": "p",
-        "text": "02/04/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog AI made it easy to generate code at unprecedented speed. What used to take days can now be scaffolded in minutes. Entire features, refactors, and pipelines can be created from a single prompt."
+        "text": "AI made it easy to generate code at unprecedented speed. What used to take days can now be scaffolded in minutes. Entire features, refactors, and pipelines can be created from a single prompt."
       },
       {
         "type": "p",
@@ -1442,14 +1369,6 @@
       {
         "type": "p",
         "text": "Ship with standards."
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "February 4, 2026"
       }
     ],
     "date": "2026-02-04",
@@ -1459,23 +1378,11 @@
     "path": "/blog/opus-4-6-tanked-the-market-will-it-replace-saas/",
     "source": "/opus-4-6-tanked-the-market-will-it-replace-saas/",
     "title": "Opus 4.6 Tanked the Market. Will It Replace SaaS?",
-    "description": "Learn more about Opus 4.6 Tanked the Market. Will It Replace SaaS?.",
+    "description": "When Anthropic’s Claude Opus 4.6 was released, the reaction was immediate. Markets wobbled. Commentators started speculating. The familiar question surfaced again: Is this…",
     "blocks": [
       {
-        "type": "h2",
-        "text": "Opus 4.6 Tanked the Market. Will It Replace SaaS?"
-      },
-      {
-        "type": "h3",
-        "text": "James Carso (CTO)"
-      },
-      {
         "type": "p",
-        "text": "02/06/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog When Anthropic’s Claude Opus 4.6 was released, the reaction was immediate. Markets wobbled. Commentators started speculating. The familiar question surfaced again: Is this the model that replaces SaaS? Does Salesforce disappear? Does HubSpot get rebuilt by internal AI teams? Do traditional engineering orgs become obsolete?"
+        "text": "When Anthropic’s Claude Opus 4.6 was released, the reaction was immediate. Markets wobbled. Commentators started speculating. The familiar question surfaced again: Is this the model that replaces SaaS? Does Salesforce disappear? Does HubSpot get rebuilt by internal AI teams? Do traditional engineering orgs become obsolete?"
       },
       {
         "type": "p",
@@ -1672,14 +1579,6 @@
       {
         "type": "p",
         "text": "That is physics."
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "February 6, 2026"
       }
     ],
     "date": "2026-02-06",
@@ -1689,23 +1588,15 @@
     "path": "/blog/the-model-is-not-the-system/",
     "source": "/the-model-is-not-the-system/",
     "title": "The Model Is Not the System",
-    "description": "Learn more about The Model Is Not the System.",
+    "description": "Anthropic’s Claude Opus 4.6 and the latest GPT-4 models are materially better than their predecessors. They reason longer. They maintain deeper context. They self-correct…",
     "blocks": [
-      {
-        "type": "h2",
-        "text": "The Model Is Not the System"
-      },
       {
         "type": "h3",
         "text": "Kimberley Modeste (CEO)"
       },
       {
         "type": "p",
-        "text": "02/06/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog Anthropic’s Claude Opus 4.6 and the latest GPT-4 models are materially better than their predecessors. They reason longer. They maintain deeper context. They self-correct more effectively. On isolated coding tasks, they perform at a level that would have seemed unrealistic just a few years ago."
+        "text": "Anthropic’s Claude Opus 4.6 and the latest GPT-4 models are materially better than their predecessors. They reason longer. They maintain deeper context. They self-correct more effectively. On isolated coding tasks, they perform at a level that would have seemed unrealistic just a few years ago."
       },
       {
         "type": "p",
@@ -1782,14 +1673,6 @@
       {
         "type": "p",
         "text": "Production reliability depends on understanding that difference."
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "February 6, 2026"
       }
     ],
     "date": "2026-02-06",
@@ -1798,24 +1681,12 @@
   {
     "path": "/blog/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/",
     "source": "/the-enterprise-pipeline-that-doesnt-let-ai-off-the-hook/",
-    "title": "The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook",
-    "description": "Learn more about The Enterprise Pipeline That Doesn&#039;t Let AI Off the Hook.",
+    "title": "The Enterprise Pipeline That Doesn't Let AI Off the Hook",
+    "description": "Enterprises are not asking how to go faster with AI. They are asking how to stay in control when they do. And right behind that: how do we make sure we understand what AI…",
     "blocks": [
       {
-        "type": "h2",
-        "text": "The Enterprise Pipeline That Doesn't Let AI Off the Hook"
-      },
-      {
-        "type": "h3",
-        "text": "James Carso (CTO)"
-      },
-      {
         "type": "p",
-        "text": "04/01/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog Enterprises are not asking how to go faster with AI. They are asking how to stay in control when they do. And right behind that: how do we make sure we understand what AI built?"
+        "text": "Enterprises are not asking how to go faster with AI. They are asking how to stay in control when they do. And right behind that: how do we make sure we understand what AI built?"
       },
       {
         "type": "p",
@@ -1876,14 +1747,6 @@
       {
         "type": "p",
         "text": "Your agents build it. Mault makes sure you own it."
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "April 1, 2026"
       }
     ],
     "date": "2026-04-01",
@@ -1892,24 +1755,12 @@
   {
     "path": "/blog/the-triage-report-ai-vendors-dont-want-you-to-see/",
     "source": "/the-triage-report-ai-vendors-dont-want-you-to-see/",
-    "title": "The Triage Report AI Vendors Don&#039;t Want You to See",
-    "description": "Learn more about The Triage Report AI Vendors Don&#039;t Want You to See.",
+    "title": "The Triage Report AI Vendors Don't Want You to See",
+    "description": "If you think AI is ready to one-shot complex systems, you’re wrong. Unless, of course, you think wrapping a Todo list in FastAPI and calling it an “Asynchronous Event-Driven…",
     "blocks": [
       {
-        "type": "h2",
-        "text": "The Triage Report AI Vendors Don't Want You to See"
-      },
-      {
-        "type": "h3",
-        "text": "James Carso (CTO)"
-      },
-      {
         "type": "p",
-        "text": "03/28/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog If you think AI is ready to one-shot complex systems, you’re wrong. Unless, of course, you think wrapping a Todo list in FastAPI and calling it an “Asynchronous Event-Driven Agent” counts as production engineering."
+        "text": "If you think AI is ready to one-shot complex systems, you’re wrong. Unless, of course, you think wrapping a Todo list in FastAPI and calling it an “Asynchronous Event-Driven Agent” counts as production engineering."
       },
       {
         "type": "p",
@@ -1950,14 +1801,6 @@
       {
         "type": "h3",
         "text": "Bot finding triage — 9 findings (5 HIGH, 2 MEDIUM, 2 LOW)"
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "March 28, 2026"
       }
     ],
     "date": "2026-03-28",
@@ -1966,24 +1809,12 @@
   {
     "path": "/blog/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/",
     "source": "/we-tested-multi-agent-orchestration-on-two-different-machines-heres-what-happened/",
-    "title": "We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened.",
-    "description": "Learn more about We Tested Multi-Agent Orchestration on Two Different Machines. Here&#039;s What Happened..",
+    "title": "We Tested Multi-Agent Orchestration on Two Different Machines. Here's What Happened.",
+    "description": "For those getting into AI workloads, hardware matters more than you think. I spent yesterday testing multi-agent orchestration on a baseline system versus a mid-tier…",
     "blocks": [
       {
-        "type": "h2",
-        "text": "We Tested Multi-Agent Orchestration on Two Different Machines. Here's What Happened."
-      },
-      {
-        "type": "h3",
-        "text": "James Carso (CTO)"
-      },
-      {
         "type": "p",
-        "text": "03/16/2026"
-      },
-      {
-        "type": "p",
-        "text": "Back to Blog For those getting into AI workloads, hardware matters more than you think. I spent yesterday testing multi-agent orchestration on a baseline system versus a mid-tier workstation to see how they handle concurrent reasoning. The baseline system hit a ceiling quickly…. it was slow, error-prone, and couldn't handle more than two agents at once without stuttering."
+        "text": "For those getting into AI workloads, hardware matters more than you think. I spent yesterday testing multi-agent orchestration on a baseline system versus a mid-tier workstation to see how they handle concurrent reasoning. The baseline system hit a ceiling quickly…. it was slow, error-prone, and couldn't handle more than two agents at once without stuttering."
       },
       {
         "type": "p",
@@ -1992,14 +1823,6 @@
       {
         "type": "p",
         "text": "If you're curious, I am currently running two different baselines for testing and two mid-tier workstations for orchestration. I can’t justify a pro workstation yet, but the mid-tier setups give me the flexibility to adapt later for heavier local workflows or tuning."
-      },
-      {
-        "type": "h2",
-        "text": "James Carso (CTO)"
-      },
-      {
-        "type": "h2",
-        "text": "March 16, 2026"
       }
     ],
     "date": "2026-03-16",
