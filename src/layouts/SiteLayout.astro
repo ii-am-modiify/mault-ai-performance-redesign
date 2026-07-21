@@ -22,7 +22,9 @@ const nav = [
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta name="theme-color" content="#070907" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%23070907%22/><path d=%22M15 46V18h8l9 14 9-14h8v28h-8V30l-9 13-9-13v16z%22 fill=%22%23a8ff3e%22/></svg>" />
+    <link rel="icon" type="image/avif" href="/favicon.avif" sizes="32x32" />
+    <link rel="icon" type="image/avif" href="/favicon.avif" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/favicon.avif" />
     <title>{title}</title>
     <script is:inline>document.documentElement.classList.add('has-js');</script>
     <script is:inline type="application/ld+json" set:html={JSON.stringify({
