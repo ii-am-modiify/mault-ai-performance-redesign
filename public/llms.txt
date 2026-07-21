@@ -1,0 +1,5 @@
+# Mault
+
+Mault provides deterministic governance, observability, and audit-ready evidence for AI-assisted software development.
+
+This preview is not the production website and is intentionally excluded from indexing.

@@ -1,0 +1,30 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import pages from '../data/migrated-pages.json';
+
+export function getStaticPaths() {
+  return pages.map((page) => ({
+    params: { slug: page.path.replace(/^\/+|\/+$/g, '') },
+    props: { page },
+  }));
+}
+const { page } = Astro.props;
+const isBlogIndex = page.path === '/blog/';
+const articles = pages.filter((item) => item.path.startsWith('/blog/') && item.path !== '/blog/');
+const normalizeType = (type) => type === 'h1' ? 'h2' : type;
+---
+<SiteLayout title={`${page.title} | Mault`} description={page.description} canonical={page.path}>
+  <header class="page-hero"><div class="shell"><p class="eyebrow">Mault</p><h1>{page.title}</h1><p class="lede">{page.description}</p></div></header>
+  {isBlogIndex ? (
+    <section class="shell blog-grid">
+      {articles.map((article) => <a class="blog-card" href={article.path}><p class="eyebrow">Article</p><h2>{article.title}</h2><p>{article.description}</p></a>)}
+    </section>
+  ) : (
+    <article class="shell prose">
+      {page.blocks.map((block) => {
+        const Tag = normalizeType(block.type);
+        return Tag === 'li' ? <ul><li>{block.text}</li></ul> : <Tag>{block.text}</Tag>;
+      })}
+    </article>
+  )}
+</SiteLayout>

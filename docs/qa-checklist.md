@@ -1,0 +1,21 @@
+# Mault.ai V2 QA Checklist
+
+- [ ] All source URLs accounted for in route map.
+- [ ] Migrated copy and legal pages compared against checksummed captures.
+- [ ] Build and typecheck pass.
+- [ ] Internal/external link scan passes or has documented exceptions.
+- [ ] One H1, unique title/description, canonical, and valid social metadata per retained route.
+- [ ] Structured data matches visible content and validates.
+- [ ] 320/390/768/1024/1440 screenshots reviewed.
+- [ ] No horizontal overflow or clipped interactive controls.
+- [ ] Keyboard-only navigation and visible focus pass.
+- [ ] Mobile menu, accordions, media controls, and forms pass touch and keyboard checks.
+- [ ] Reduced-motion and no-JavaScript paths retain all essential content.
+- [ ] No application console errors.
+- [ ] Accessibility scan plus manual landmark/heading/label/contrast review passes.
+- [ ] Mobile performance >= 90; desktop >= 95; LCP <= 2.5s; TBT <= 200ms; CLS <= 0.05.
+- [ ] Initial homepage transfer target <= 2MB with lazy below-fold media.
+- [ ] Docker image runs unprivileged and health check passes.
+- [ ] CSP and security headers verified against final integrations.
+- [ ] Preview has HTML noindex plus `X-Robots-Tag` noindex protection.
+- [ ] Review packet includes baseline comparison, screenshots, test output, route map, and rollback path.
