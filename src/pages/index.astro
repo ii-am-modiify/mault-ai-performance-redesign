@@ -23,6 +23,23 @@ const features = [
   ['Run governance from one place','Distribute standards across contributors and coding agents while keeping exceptions explicit and reviewable.','policy synced','team aligned','exceptions visible'],
   ['Parallel agents without file collisions','Coordinate concurrent work with deterministic ownership and protected boundaries instead of hoping agents stay out of each other’s way.','scope reserved','conflict prevented','work merged'],
 ];
+const flowDetails: Record<string,string> = {
+  'policy loaded':'The repository policy is resolved locally and its signed version is attached to this run.',
+  'write evaluated':'The proposed file mutation is checked against protected paths, architecture rules, and allowed scope.',
+  'rule enforced':'The action is permitted or blocked before an invalid change can reach disk.',
+  'session attributed':'The developer, agent, repository, branch, and machine identity are linked to one session.',
+  'action recorded':'Every state-changing tool call is recorded with intent, inputs, affected scope, and result.',
+  'change linked':'The resulting diff is connected to the action and identity that produced it.',
+  'evidence sealed':'The decision record is hashed and sealed so later modification becomes detectable.',
+  'chain verified':'Each evidence record verifies against the previous record in the local audit chain.',
+  'report ready':'The verified chain can be exported for security, compliance, or incident review.',
+  'policy synced':'Approved organization policy is distributed consistently to contributors and agents.',
+  'team aligned':'Every supported coding surface evaluates the same deterministic standards.',
+  'exceptions visible':'Overrides remain explicit, attributed, time-bound, and reviewable.',
+  'scope reserved':'The agent receives deterministic ownership of the files and tasks assigned to it.',
+  'conflict prevented':'Overlapping writes are identified before parallel agents collide.',
+  'work merged':'Verified outputs return through a controlled integration path with evidence intact.',
+};
 const faqs = [
   ['Does Mault replace my coding agent?','No. Mault is the governance and orchestration layer around the agents your team already uses.'],
   ['Does our code leave our environment?','The platform is designed to run locally and in air-gapped environments so source code and evidence remain under your control.'],
@@ -57,7 +74,7 @@ const faqs = [
     <div class="section-head" data-reveal><div><p class="eyebrow">The gap</p><h2>AI writes code.<br/>Mault enforces your rules.</h2></div><p>Prompts and rules files express intent. They do not prove compliance. Mault makes governance deterministic at the moment an agent attempts to change state.</p></div>
     <div class="cards-3">{pillars.map(([title,body],i)=><article class="card" data-reveal><span class="card-index">0{i+1}</span><h3>{title}</h3><p>{body}</p></article>)}</div>
   </div></section>
-  <section class="section"><div class="shell">{features.map(([title,body,...steps],i)=><article class="feature" data-reveal data-flow-feature><div><p class="eyebrow">{String(i+1).padStart(2,'0')} / Platform</p><h3>{title}</h3><p>{body}</p><a class="button button-secondary" href="/platform/">Explore the platform</a></div><div class="visual"><div class="flow" data-flow>{steps.map((step,stepIndex)=><button class="flow-row" type="button" data-flow-row aria-pressed="false" style={`--flow-delay:${stepIndex * 180}ms`}><span>{step}</span><small>Inspect</small></button>)}</div></div></article>)}</div></section>
+  <section class="section"><div class="shell">{features.map(([title,body,...steps],i)=><article class="feature" data-reveal data-flow-feature><div><p class="eyebrow">{String(i+1).padStart(2,'0')} / Platform</p><h3>{title}</h3><p>{body}</p><a class="button button-secondary" href="/platform/">Explore the platform</a></div><div class="visual"><div class="flow" data-flow>{steps.map((step,stepIndex)=><button class="flow-row" type="button" data-flow-row data-detail={flowDetails[step]} aria-pressed="false" style={`--flow-delay:${stepIndex * 180}ms`}><span>{step}</span><small>Inspect</small></button>)}<div class="flow-inspector" data-flow-inspector aria-live="polite"><span>Ready</span><p>Select a workflow step to inspect its enforcement record.</p></div></div></div></article>)}</div></section>
   <section class="proof-stats"><div class="shell"><div class="proof-stats-head"><p class="eyebrow">Measured outcomes</p><h2>Governance you can quantify.</h2></div><div class="proof-stat-grid"><article><strong data-count="0.18" data-decimals="2" data-suffix="%">0.18%</strong><span>Revert rate on governed code</span></article><article><strong data-count="2.6" data-decimals="1" data-suffix="%">2.6%</strong><span>Code duplication rate</span></article><article><strong data-count="100" data-suffix="%">100%</strong><span>State-changing actions attributed</span></article></div><p class="proof-note">Performance figures carried forward from the current Mault product story. Final production copy should link each metric to its supporting methodology.</p></div></section>
   <section class="quote-band"><div class="shell"><p>Better prompts. Better specs. Better rules files. <strong>It’s not enough.</strong></p></div></section>
   <section class="section" id="pricing"><div class="shell"><div class="section-head"><div><p class="eyebrow">Pricing</p><h2>Governance for teams of all sizes.</h2></div><p>Start with individual control, then standardize policy and evidence across the organization.</p></div><div class="pricing"><article class="price-card"><p class="eyebrow">Pro</p><h3>For builders and small teams</h3><div class="price">$19–$49 <small>/ month</small></div><ul><li>Local governance controls</li><li>Agent activity records</li><li>Production-readiness checks</li></ul><a class="button button-secondary" href="/contact/">Talk to us</a></article><article class="price-card featured"><p class="eyebrow">Enterprise</p><h3>For governed organizations</h3><div class="price">Custom</div><ul><li>Central policy management</li><li>Organization-wide evidence</li><li>Air-gapped deployment options</li></ul><a class="button" href="/pilot/">Start a pilot</a></article></div></div></section>

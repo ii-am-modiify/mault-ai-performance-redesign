@@ -184,6 +184,17 @@ const nav = [
         });
         row.classList.add('is-selected');
         row.setAttribute('aria-pressed', 'true');
+        const inspector = flow?.querySelector('[data-flow-inspector]');
+        const label = row.querySelector('span')?.textContent?.trim() || 'Selected step';
+        const detail = row.getAttribute('data-detail') || 'Execution detail is available for this workflow step.';
+        if (inspector instanceof HTMLElement) {
+          const status = inspector.querySelector('span');
+          const copy = inspector.querySelector('p');
+          if (status) status.textContent = `${label} · verified`;
+          if (copy) copy.textContent = detail;
+          inspector.classList.remove('is-active');
+          requestAnimationFrame(() => inspector.classList.add('is-active'));
+        }
       }));
     </script>
   </body>
