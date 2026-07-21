@@ -21,13 +21,25 @@ The Blog Studio login is a public demo gate. Its shared passphrase is intentiona
 
 ## Results
 
-Final command output and GitHub check links are recorded in the pull request and delivery closeout. At the time of publication:
+Final command output and GitHub check links are recorded in [pull request #7](https://github.com/ii-am-modiify/mault-ai-performance-redesign/pull/7).
 
-- Astro diagnostics/build: pending final branch run
-- npm production dependency audit: pending final branch run
-- Repository/history secret-pattern scan: pending final branch run
-- Live header and route audit: pending final deployment run
-- GitHub CI, CodeQL, and dependency review: pending pull request
+- Astro diagnostics/build: passed with 0 errors, 0 warnings, and 0 hints; 24 routes built.
+- Route/discovery verification: all 24 HTML routes and required sitemap, robots, LLM, humans, and security files passed.
+- npm dependency audit at low severity: 0 known vulnerabilities.
+- Repository/history high-confidence secret-pattern scan: no OpenAI, GitHub, AWS, Google API/OAuth, or private-key patterns found outside immutable public-source captures.
+- GitHub secret scanning: 0 alerts; push protection enabled.
+- Dependabot: 0 open alerts; npm and GitHub Actions update monitoring configured.
+- Private vulnerability reporting: enabled.
+- GitHub Actions: all third-party actions pinned to immutable commit SHAs.
+- Pull-request checks: CI, CodeQL, and dependency review passed.
+- CodeQL scope excludes immutable third-party WordPress HTML captures while scanning application, utility, and workflow code. The capture utility's flagged HTML regexes were replaced with bounded parsing logic.
+- Live discovery audit: `/`, `/admin/blog/`, `/sitemap.xml`, `/llms.txt`, `/llms-full.txt`, `/humans.txt`, and `/.well-known/security.txt` returned 200.
+- Live headers: CSP, HSTS, COOP, CORP, frame denial, MIME protection, referrer policy, permissions policy, and noindex protection present.
+- Container: healthy, UID 101, read-only root filesystem, all Linux capabilities dropped, and `no-new-privileges` enabled.
+- Browser verification: incorrect demo passphrase rejected, documented passphrase accepted, session state persisted, 390px layout had no horizontal overflow, and console errors were 0.
+- HTML article preview: scripts, embedded contexts, forms, event handlers, inline styles, and unsafe JavaScript URLs are stripped before insertion.
+
+No dedicated base-image CVE scanner was installed in the build environment. Both build and runtime images are pinned to immutable digests, and the runtime is minimal and unprivileged. Production operations should still add Trivy or Grype image scanning plus SBOM generation to CI.
 
 ## Residual risks
 

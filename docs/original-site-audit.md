@@ -1,7 +1,9 @@
 # Original Mault.ai site audit
 
-Audit date: July 21, 2026  
-Source: publicly accessible `https://mault.ai/` pages and discovery endpoints  
+Audit date: July 21, 2026
+
+Source: publicly accessible `https://mault.ai/` pages and discovery endpoints
+
 Scope: observation only; the production website was not changed
 
 ## Executive finding
