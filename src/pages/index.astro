@@ -39,7 +39,7 @@ const faqs = [
       <div class="hero-actions"><a class="button" href="/pilot/">Start a pilot</a><a class="button button-secondary" href="/how-it-works/">See how it works</a></div>
       <div class="hero-proof" data-reveal>
         <div class="terminal" aria-label="Example Mault governance output">
-          <div class="terminal-bar"><i></i><i></i><i></i></div>
+          <div class="terminal-bar"><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span><button class="terminal-replay" type="button" data-terminal-replay aria-label="Replay terminal animation">Replay</button></div>
           <div class="terminal-sequence" data-terminal-sequence>
             <div class="command"><span class="terminal-prompt" aria-hidden="true">$</span> <span class="terminal-command" data-command="mault run --policy production">mault run --policy production</span><span class="terminal-caret" aria-hidden="true"></span></div>
             <div class="terminal-line" data-terminal-step><span>01</span><span>Identity linked to authenticated developer</span></div>
@@ -52,7 +52,7 @@ const faqs = [
       </div>
     </div>
   </section>
-  <section class="agent-strip" aria-labelledby="agent-heading"><div class="shell"><div class="agent-intro"><div><p class="eyebrow">Works with your stack</p><h2 id="agent-heading">One governance layer.<br/>Every coding surface.</h2></div><p>Explore the tools Mault is designed to govern. Each tile opens the official product site.</p></div><div class="agent-list">{agents.map(([name,slug,url])=><a class="agent-tile" href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name} official website (opens in a new tab)`}><span class="agent-icon"><img src={`/assets/agents/${slug}.svg`} alt="" width="32" height="32" loading="lazy" /></span><strong>{name}</strong><span class="agent-arrow" aria-hidden="true">↗</span></a>)}</div></div></section>
+  <section class="agent-strip" aria-labelledby="agent-heading" data-agent-section><div class="shell"><div class="agent-intro"><div><p class="eyebrow">Works with your stack</p><h2 id="agent-heading">One governance layer.<br/>Every coding surface.</h2></div><p>Explore the tools Mault is designed to govern. Each interactive tile opens the official product site.</p></div><div class="agent-list">{agents.map(([name,slug,url], index)=><a class="agent-tile" data-agent-tile style={`--tile-delay:${index * 70}ms`} href={url} target="_blank" rel="noopener noreferrer" aria-label={`${name} official website (opens in a new tab)`}><span class="agent-icon"><img src={`/assets/agents/${slug}.svg`} alt="" width="32" height="32" loading="lazy" /></span><strong>{name}</strong><span class="agent-arrow" aria-hidden="true">↗</span></a>)}</div></div></section>
   <section class="section" id="problem"><div class="shell">
     <div class="section-head" data-reveal><div><p class="eyebrow">The gap</p><h2>AI writes code.<br/>Mault enforces your rules.</h2></div><p>Prompts and rules files express intent. They do not prove compliance. Mault makes governance deterministic at the moment an agent attempts to change state.</p></div>
     <div class="cards-3">{pillars.map(([title,body],i)=><article class="card" data-reveal><span class="card-index">0{i+1}</span><h3>{title}</h3><p>{body}</p></article>)}</div>

@@ -125,8 +125,8 @@ const nav = [
       document.querySelectorAll('[data-count]').forEach((el) => counterObserver.observe(el));
 
       const terminal = document.querySelector('[data-terminal-sequence]');
-      const playTerminal = () => {
-        if (!(terminal instanceof HTMLElement) || terminal.dataset.played === 'true') return;
+      const playTerminal = (force = false) => {
+        if (!(terminal instanceof HTMLElement) || (!force && terminal.dataset.played === 'true')) return;
         terminal.dataset.played = 'true';
         const command = terminal.querySelector('[data-command]');
         const steps = [...terminal.querySelectorAll('[data-terminal-step]')];
@@ -136,6 +136,8 @@ const nav = [
         }
         const text = command.dataset.command || '';
         command.textContent = '';
+        steps.forEach((step) => step.classList.remove('is-visible'));
+        terminal.classList.remove('is-complete');
         terminal.classList.add('is-running');
         let index = 0;
         const typeNext = () => {
@@ -153,6 +155,18 @@ const nav = [
           if (entry.isIntersecting) { playTerminal(); terminalObserver.disconnect(); }
         }), { threshold: .45 });
         terminalObserver.observe(terminal);
+      }
+
+      document.querySelector('[data-terminal-replay]')?.addEventListener('click', () => playTerminal(true));
+
+      const agentSection = document.querySelector('[data-agent-section]');
+      if (agentSection) {
+        const agentObserver = new IntersectionObserver((entries) => entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          agentObserver.disconnect();
+        }), { threshold: .2 });
+        agentObserver.observe(agentSection);
       }
     </script>
   </body>
