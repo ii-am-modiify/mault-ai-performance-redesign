@@ -3,7 +3,7 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import pages from '../data/migrated-pages.json';
 
 export function getStaticPaths() {
-  return pages.filter((page) => page.path !== '/pilot/').map((page) => ({
+  return pages.filter((page) => !['/pilot/','/how-it-works/'].includes(page.path)).map((page) => ({
     params: { slug: page.path.replace(/^\/+|\/+$/g, '') },
     props: { page },
   }));

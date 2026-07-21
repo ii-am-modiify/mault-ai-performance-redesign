@@ -1,7 +1,7 @@
 <aside class="mault-bot" data-mault-bot>
-  <button class="mault-bot-launch" type="button" aria-expanded="false" aria-controls="mault-bot-panel"><span class="mault-bot-orb">M</span><span><strong>Ask Mault</strong><small>Product + policy assistant</small></span></button>
+  <button class="mault-bot-launch" type="button" aria-label="Open Mault Bot" aria-expanded="false" aria-controls="mault-bot-panel"><span class="mault-bot-orb"><img src="/assets/mault-logo.png" alt="" width="903" height="313" /></span><span><strong>Ask Mault</strong><small>Product + policy assistant</small></span></button>
   <section class="mault-bot-panel" id="mault-bot-panel" aria-label="Mault demo assistant" hidden>
-    <header><span class="mault-bot-orb">M</span><div><strong>Mault Bot</strong><small><i></i> grounded demo assistant</small></div><button type="button" data-bot-close aria-label="Close Mault Bot">×</button></header>
+    <header><span class="mault-bot-orb"><img src="/assets/mault-logo.png" alt="Mault" width="903" height="313" /></span><div><strong>Mault Bot</strong><small><i></i> grounded demo assistant</small></div><button type="button" data-bot-close aria-label="Close Mault Bot">×</button></header>
     <div class="mault-bot-log" data-bot-log role="log" aria-live="polite">
       <article class="bot-message bot-message-assistant"><span>MAULT / ONLINE</span><p>I can explain the platform, map Mault to your coding stack, or simulate a governance decision.</p></article>
       <div class="mault-bot-prompts">
@@ -61,3 +61,4 @@
     document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && root.classList.contains('is-open')) setOpen(false); });
   }
 </script>
+<style>.mault-bot-orb{width:62px!important;font-size:0}.mault-bot-orb img{width:48px;height:auto}</style>
